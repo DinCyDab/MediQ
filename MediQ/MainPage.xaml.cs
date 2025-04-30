@@ -1,4 +1,7 @@
-﻿namespace MediQ
+﻿using MediQ.MVC.Controller;
+using MediQ.MVC.Models;
+
+namespace MediQ
 {
     public partial class MainPage : ContentPage
     {
