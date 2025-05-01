@@ -11,6 +11,8 @@ namespace MediQ.MVC.Controller
     class UserController
     {
         DatabaseController dc = new DatabaseController();
+
+        //Used for registering the user
         public bool insertUser(string username, string password, string first_name, string last_name)
         {
             //Checks if the username is already inside the database
@@ -26,6 +28,7 @@ namespace MediQ.MVC.Controller
             return true;
         }
         
+        //Used for logging in the user and load the user data
         public User loadUser(string username, string password)
         {
             User user = null;
@@ -36,6 +39,8 @@ namespace MediQ.MVC.Controller
             return user;
         }
 
+        //Used for checking the username inside the database to avoid duplication of username
+        //Returns false if not found
         public bool checkUser(string username)
         {
             bool is_found = false;

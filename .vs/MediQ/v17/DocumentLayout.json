@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\C# Project\\MediQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\controller\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\controller\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\controller\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\controller\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,45 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\UserController.cs",
               "RelativeDocumentMoniker": "MediQ\\MVC\\Controller\\UserController.cs",
               "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\UserController.cs",
               "RelativeToolTip": "MediQ\\MVC\\Controller\\UserController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T11:33:38.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatabaseController.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\DatabaseController.cs",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\Controller\\DatabaseController.cs",
-              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\DatabaseController.cs",
-              "RelativeToolTip": "MediQ\\MVC\\Controller\\DatabaseController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwFYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T11:17:24.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\Controller\\AppointmentController.cs",
-              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\AppointmentController.cs",
-              "RelativeToolTip": "MediQ\\MVC\\Controller\\AppointmentController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T11:15:14.445Z",
+              "WhenOpened": "2025-05-01T06:46:44.478Z",
               "EditorCaption": ""
             }
           ]

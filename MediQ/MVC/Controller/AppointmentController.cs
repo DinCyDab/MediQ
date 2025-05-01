@@ -10,7 +10,10 @@ namespace MediQ.MVC.Controller
     class AppointmentController
     {
         DatabaseController dc = new DatabaseController();
-        public void createAppointment(int user_ID, int doctor_ID, string date, string time, string status)
+
+        //Used to create appointments on user side
+        //Skipped appointment_status as this will always yield Pending
+        public void createAppointment(int user_ID, int doctor_ID, string date, string time)
         {
             DateTime input_date;
             DateTime.TryParse(date, out input_date);
@@ -18,12 +21,13 @@ namespace MediQ.MVC.Controller
             TimeSpan input_time;
             TimeSpan.TryParse(time, out input_time);
 
-            string sql = $"INSERT INTO Appointment(user_ID, doctor_ID, appointment_date, appointment_time, appointment_status)" +
-                         $"VALUES('{user_ID}', '{doctor_ID}', '{input_date}', '{input_time}', '{status}')";
+            string sql = $"INSERT INTO Appointment(user_ID, doctor_ID, appointment_date, appointment_time)" +
+                         $"VALUES('{user_ID}', '{doctor_ID}', '{input_date}', '{input_time}')";
 
             this.dc.insertData(sql);
         }
 
+        //Used to load the list of appointments on user side
         public List<Appointment> loadAppointments(int user_ID, string date)
         {
             List<Appointment> list_of_appointments = null;
