@@ -30,7 +30,13 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
-            
+
+            <Button
+                x:Name="SearchButton"
+                Text="Search"
+                Clicked="goToSearchPage"
+                />
+
             <Label
                 x:Name="user_output"/>
         </VerticalStackLayout>

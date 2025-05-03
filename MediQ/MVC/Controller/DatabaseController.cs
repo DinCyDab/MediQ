@@ -57,7 +57,7 @@ namespace MediQ.MVC.Controller
         public bool findUser(string sql)
         {
             bool is_found = false;
-            this.conn = new SqlConnection();
+            this.conn = new SqlConnection(this.connectionString);
             this.conn.Open();
 
             SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();
@@ -76,7 +76,7 @@ namespace MediQ.MVC.Controller
         {
             List<Appointment> list_of_appointments = new List<Appointment>();
 
-            this.conn = new SqlConnection();
+            this.conn = new SqlConnection(this.connectionString);
             this.conn.Open();
 
             SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();
@@ -111,7 +111,7 @@ namespace MediQ.MVC.Controller
         public List<Doctors> findDoctors(string sql)
         {
             List<Doctors> list_of_doctors = new List<Doctors>();
-            this.conn = new SqlConnection();
+            this.conn = new SqlConnection(this.connectionString);
             this.conn.Open();
 
             SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();
@@ -135,7 +135,7 @@ namespace MediQ.MVC.Controller
         public Doctors loadDoctor(string sql)
         {
             Doctors doctor = new Doctors();
-            this.conn = new SqlConnection();
+            this.conn = new SqlConnection(this.connectionString);
             this.conn.Open();
 
             SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();
@@ -156,7 +156,7 @@ namespace MediQ.MVC.Controller
         {
             List<History> list_of_history = new List<History>();
 
-            this.conn = new SqlConnection();
+            this.conn = new SqlConnection(this.connectionString);
             this.conn.Open();
 
             SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();

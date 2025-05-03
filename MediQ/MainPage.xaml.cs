@@ -1,5 +1,6 @@
 ﻿using MediQ.MVC.Controller;
 using MediQ.MVC.Models;
+using MediQ.MVC.View;
 
 namespace MediQ
 {
@@ -22,6 +23,11 @@ namespace MediQ
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+        }
+
+        private async void goToSearchPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchView());
         }
     }
 

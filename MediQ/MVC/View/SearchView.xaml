@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.SearchView">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#F1F9FF"
+                             x:Name="stack_layout">
+            <Frame BackgroundColor="#095D7E"
+                   CornerRadius="0"
+                   BorderColor="#095D7E">
+                <Grid ColumnDefinitions="*, 30"
+                      VerticalOptions="Center">
+                    <Entry TextColor="Black"
+                           BackgroundColor="White"
+                           Grid.Column="0"
+                           Placeholder="Search..."
+                           FontSize="12"/>
+                    <Border WidthRequest="30"
+                        HeightRequest="20"
+                        Stroke="Transparent"
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End">
+                        <Image Source="search.png"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                               Aspect="AspectFit"/>
+                    </Border>
+                </Grid>
+            </Frame>
+            <ContentView SemanticProperties.Description="Category"
+                BackgroundColor="AliceBlue"
+                Padding="10">
+
+            </ContentView>
+            <BoxView BackgroundColor="#095D7E"
+                     HeightRequest="5"/>
+
+            <Frame CornerRadius="10"
+                   Margin="10"
+                   BackgroundColor="#CCECEE"
+                   BorderColor="Transparent">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="goToMainPage"/>
+                </Frame.GestureRecognizers>
+                <Grid RowDefinitions="*" ColumnDefinitions="*, *, *">
+                    <Image Grid.Column="0"
+                       Source="user.png"
+                       Aspect="AspectFit"
+                       WidthRequest="50"
+                       HeightRequest="50"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1"
+                                         Spacing="2"
+                                         VerticalOptions="Center">
+                        <Label Text="Dr. Juan Dela Cruz"
+                           TextColor="#095D7E"
+                           FontSize="10"/>
+                        <Label Text="Current Location"
+                           TextColor="#095D7E"
+                           FontSize="8"/>
+                    </VerticalStackLayout>
+                    <HorizontalStackLayout Grid.Column="2"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End">
+                        <Border WidthRequest="20"
+                                HeightRequest="20"
+                                Stroke="Transparent">
+                            <Image Source="send.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="goToMainPage"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Border>
+                        <Border WidthRequest="20"
+                                HeightRequest="20"
+                                Stroke="Transparent">
+                            <Image Source="person.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="goToMainPage"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Border>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

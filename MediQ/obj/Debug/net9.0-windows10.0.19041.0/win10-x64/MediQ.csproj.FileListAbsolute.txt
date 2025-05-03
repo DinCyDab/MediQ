@@ -508,3 +508,11 @@ D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\pri.res
 D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+D:\C# Project\MediQ\MediQ\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\person.scale-100.png
+D:\C# Project\MediQ\MediQ\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\send.scale-100.png
+D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\person.scale-100.png
+D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\send.scale-100.png
+D:\C# Project\MediQ\MediQ\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\user.scale-100.png
+D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\user.scale-100.png
+D:\C# Project\MediQ\MediQ\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\search.scale-100.png
+D:\C# Project\MediQ\MediQ\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-100.png
