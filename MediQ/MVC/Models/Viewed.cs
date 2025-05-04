@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MediQ.MVC.Models
 {
-    class Viewed
+    public class Viewed
     {
         public int user_ID { get; set; }
         public int doctor_ID { get; set; }

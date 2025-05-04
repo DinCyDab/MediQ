@@ -34,8 +34,11 @@
             <Button
                 x:Name="SearchButton"
                 Text="Search"
-                Clicked="goToSearchPage"
-                />
+                Clicked="goToSearchPage"/>
+            
+            <Button
+                Text="Booking"
+                Clicked="goToBookingPage"/>
 
             <Label
                 x:Name="user_output"/>

@@ -4,18 +4,19 @@
              x:Class="MediQ.MVC.View.SearchView">
 
     <ScrollView>
-        <VerticalStackLayout BackgroundColor="#F1F9FF"
-                             x:Name="stack_layout">
+        <VerticalStackLayout BackgroundColor="#F1F9FF">
             <Frame BackgroundColor="#095D7E"
                    CornerRadius="0"
                    BorderColor="#095D7E">
                 <Grid ColumnDefinitions="*, 30"
                       VerticalOptions="Center">
-                    <Entry TextColor="Black"
+                    <Entry x:Name="search_box"
+                           TextColor="Black"
                            BackgroundColor="White"
                            Grid.Column="0"
                            Placeholder="Search..."
-                           FontSize="12"/>
+                           FontSize="12"
+                           TextChanged="searchForDoctor"/>
                     <Border WidthRequest="30"
                         HeightRequest="20"
                         Stroke="Transparent"
@@ -36,56 +37,62 @@
             </ContentView>
             <BoxView BackgroundColor="#095D7E"
                      HeightRequest="5"/>
-
-            <Frame CornerRadius="10"
+            <VerticalStackLayout x:Name="stack_layout">
+                <Label Text="Try searching for a doctor. The list will appear here."
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       Margin="20"/>
+                <!--<Frame CornerRadius="10"
                    Margin="10"
                    BackgroundColor="#CCECEE"
                    BorderColor="Transparent">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="goToMainPage"/>
-                </Frame.GestureRecognizers>
-                <Grid RowDefinitions="*" ColumnDefinitions="*, *, *">
-                    <Image Grid.Column="0"
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="goToMainPage"/>
+                    </Frame.GestureRecognizers>
+                    <Grid RowDefinitions="*" ColumnDefinitions="*, *, *">
+                        <Image Grid.Column="0"
                        Source="user.png"
                        Aspect="AspectFit"
                        WidthRequest="50"
                        HeightRequest="50"
                        VerticalOptions="Center"
                        HorizontalOptions="Center" />
-                    <VerticalStackLayout Grid.Column="1"
+                        <VerticalStackLayout Grid.Column="1"
                                          Spacing="2"
                                          VerticalOptions="Center">
-                        <Label Text="Dr. Juan Dela Cruz"
+                            <Label Text="Dr. Juan Dela Cruz"
                            TextColor="#095D7E"
                            FontSize="10"/>
-                        <Label Text="Current Location"
+                            <Label Text="Current Location"
                            TextColor="#095D7E"
                            FontSize="8"/>
-                    </VerticalStackLayout>
-                    <HorizontalStackLayout Grid.Column="2"
+                        </VerticalStackLayout>
+                        <HorizontalStackLayout Grid.Column="2"
                                VerticalOptions="Center"
                                HorizontalOptions="End">
-                        <Border WidthRequest="20"
+                            <Border WidthRequest="20"
                                 HeightRequest="20"
                                 Stroke="Transparent">
-                            <Image Source="send.png">
-                                <Image.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="goToMainPage"/>
-                                </Image.GestureRecognizers>
-                            </Image>
-                        </Border>
-                        <Border WidthRequest="20"
+                                <Image Source="send.png">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="goToMainPage"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </Border>
+                            <Border WidthRequest="20"
                                 HeightRequest="20"
                                 Stroke="Transparent">
-                            <Image Source="person.png">
-                                <Image.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="goToMainPage"/>
-                                </Image.GestureRecognizers>
-                            </Image>
-                        </Border>
-                    </HorizontalStackLayout>
-                </Grid>
-            </Frame>
+                                <Image Source="person.png">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="goToMainPage"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </Border>
+                        </HorizontalStackLayout>
+                    </Grid>
+                </Frame>-->
+
+            </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

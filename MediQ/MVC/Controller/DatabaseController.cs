@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MediQ.MVC.Models;
+using System.Diagnostics;
 
 namespace MediQ.MVC.Controller
 {
@@ -39,12 +40,12 @@ namespace MediQ.MVC.Controller
             {
                 user = new User();
                 int id = (int)reader["user_ID"];
-                string username = (string)reader["username"];
+                string email = (string)reader["email"];
                 string first_name = (string)reader["first_name"];
                 string last_name = (string)reader["last_name"];
 
-                user.id = id;
-                user.username = username;
+                user.user_ID = id;
+                user.email = email;
                 user.first_name = first_name;
                 user.last_name = last_name;
             }
@@ -119,10 +120,17 @@ namespace MediQ.MVC.Controller
             while (reader.Read())
             {
                 Doctors doctor = new Doctors();
+                Category category = new Category();
                 doctor.doctor_ID = (int)reader["doctor_ID"];
                 doctor.first_name = (string)reader["first_name"];
                 doctor.last_name = (string)reader["last_name"];
+                doctor.location = (string)reader["location"];
+                doctor.status = (string)reader["status"];
 
+                category.category_ID = (int)reader["category_ID"];
+                category.category_name = (string)reader["category_name"];
+
+                doctor.category = category;
                 list_of_doctors.Add(doctor);
             }
 
@@ -135,6 +143,7 @@ namespace MediQ.MVC.Controller
         public Doctors loadDoctor(string sql)
         {
             Doctors doctor = new Doctors();
+            Category category = new Category();
             this.conn = new SqlConnection(this.connectionString);
             this.conn.Open();
 
@@ -145,6 +154,13 @@ namespace MediQ.MVC.Controller
                 doctor.doctor_ID = (int)reader["doctor_ID"];
                 doctor.first_name = (string)reader["first_name"];
                 doctor.last_name = (string)reader["last_name"];
+                doctor.location = (string)reader["location"];
+                doctor.status = (string)reader["status"];
+
+                category.category_ID = (int)reader["category_ID"];
+                category.category_name = (string)reader["category_name"];
+
+                doctor.category = category;
             }
 
             this.conn.Close();
@@ -182,6 +198,84 @@ namespace MediQ.MVC.Controller
             this.conn.Close();
 
             return list_of_history;
+        }
+
+        public List<Schedule> loadSchedule(string sql)
+        {
+            List<Schedule> list_of_schedule = new List<Schedule>();
+            this.conn = new SqlConnection(this.connectionString);
+            this.conn.Open();
+
+            SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();
+
+            while (reader.Read())
+            {
+                Schedule schedule = new Schedule();
+
+                if (DBNull.Value != reader["schedule_ID"])
+                {
+                    schedule.schedule_ID = (int)reader["schedule_ID"];
+                    schedule.doctor_ID = (int)reader["doctor_ID"];
+                    schedule.status = (string)reader["schedule_status"];
+
+                    TimeSpan output_time = (TimeSpan)reader["schedule_time"];
+
+                    schedule.time = output_time;
+                }
+
+                DateTime output_date = (DateTime)reader["schedule_date"];
+                schedule.date = output_date;
+
+                list_of_schedule.Add(schedule);
+            }
+
+            this.conn.Close();
+
+            return list_of_schedule;
+        }
+
+        public List<Schedule> loadDateOnlySchedule(string sql)
+        {
+            List<Schedule> list_of_schedule = new List<Schedule>();
+            this.conn = new SqlConnection(this.connectionString);
+            this.conn.Open();
+
+            SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();
+
+            while (reader.Read())
+            {
+                Schedule schedule = new Schedule();
+
+                schedule.date = (DateTime)reader["schedule_date"];
+
+                list_of_schedule.Add(schedule);
+            }
+
+            this.conn.Close();
+
+            return list_of_schedule;
+        }
+
+        public Schedule loadSingleSchedule(string sql)
+        {
+            Schedule s = new Schedule();
+            this.conn = new SqlConnection(this.connectionString);
+            this.conn.Open();
+
+            SqlDataReader reader = new SqlCommand(sql, this.conn).ExecuteReader();
+
+            if (reader.Read())
+            {
+                s.schedule_ID = (int)reader["schedule_ID"];
+                s.date = (DateTime)reader["schedule_date"];
+                s.time = (TimeSpan)reader["schedule_time"];
+                s.status = (string)reader["schedule_status"];
+                s.doctor_ID = (int)reader["doctor_ID"];
+            }
+
+            this.conn.Close();
+
+            return s;
         }
     }
 }

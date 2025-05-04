@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.Modals.BackToHome">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="AliceBlue"
+                             Padding="30">
+            <Frame BackgroundColor="#095D7E"
+                   HeightRequest="300"
+                   BorderColor="Transparent"
+                   CornerRadius="10">
+                <Label Text="Thank you for confirming!"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       FontSize="30"
+                       FontAttributes="Bold"/>
+            </Frame>
+            <Button Margin="50, 100, 50, 0"
+                    Text="Back To Home"
+                    BackgroundColor="#095D7E"
+                    TextColor="White"
+                    FontSize="12"
+                    Clicked="goToMainPage">
+            </Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

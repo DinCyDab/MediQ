@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\C# Project\\MediQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\searchview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\searchview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\modals\\backtohome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\modals\\backtohome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\searchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\searchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\modals\\backtohome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\modals\\backtohome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MediQ\\MainPage.xaml",
-              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MainPage.xaml",
-              "RelativeToolTip": "MediQ\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BackToHome.xaml",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\Modals\\BackToHome.xaml",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\Modals\\BackToHome.xaml",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\Modals\\BackToHome.xaml",
+              "RelativeToolTip": "MediQ\\MVC\\View\\Modals\\BackToHome.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-03T12:20:08.18Z",
+              "WhenOpened": "2025-05-04T14:32:19.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "MediQ\\MainPage.xaml.cs",
-              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MainPage.xaml.cs",
-              "RelativeToolTip": "MediQ\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAA7AAAAAAAAAA==",
+              "Title": "BackToHome.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\Modals\\BackToHome.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\Modals\\BackToHome.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\Modals\\BackToHome.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\Modals\\BackToHome.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T12:19:17.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SearchView.xaml",
-              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\SearchView.xaml",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\SearchView.xaml",
-              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\SearchView.xaml",
-              "RelativeToolTip": "MediQ\\MVC\\View\\SearchView.xaml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-03T07:33:16.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchView.xaml.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\SearchView.xaml.cs",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\SearchView.xaml.cs",
-              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\SearchView.xaml.cs",
-              "RelativeToolTip": "MediQ\\MVC\\View\\SearchView.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowCgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T07:27:33.699Z",
+              "WhenOpened": "2025-05-04T14:28:04.801Z",
               "EditorCaption": ""
             }
           ]

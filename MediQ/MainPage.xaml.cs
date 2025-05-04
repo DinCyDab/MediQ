@@ -29,6 +29,11 @@ namespace MediQ
         {
             await Navigation.PushAsync(new SearchView());
         }
+
+        private async void goToBookingPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BookingView());
+        }
     }
 
 }

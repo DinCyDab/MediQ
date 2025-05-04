@@ -19,8 +19,10 @@ namespace MediQ.MVC.Controller
             List<Doctors> list_of_doctors = null;
 
             string sql = $"SELECT * FROM Doctors " +
+                         $"INNER JOIN Category ON Doctors.category_ID = Category.category_ID " +
                          $"WHERE first_name LIKE '%{input}%' OR " +
-                         $"last_name LIKE '%{input}%'";
+                         $"last_name LIKE '%{input}%' OR " +
+                         $"category_name LIKE '%{input}%'";
 
             list_of_doctors = this.dc.findDoctors(sql);
 
@@ -67,6 +69,19 @@ namespace MediQ.MVC.Controller
             }
 
             return list_of_doctors;
+        }
+
+        public Doctors loadDoctor(int doctor_ID)
+        {
+            Doctors doctor = new Doctors();
+
+            string sql = $"SELECT * FROM Doctors " +
+                         $"INNER JOIN Category ON Doctors.category_ID = Category.category_ID " +
+                         $"WHERE doctor_ID = {doctor_ID}";
+
+            doctor = this.dc.loadDoctor(sql);
+
+            return doctor;
         }
     }
 }

@@ -13,16 +13,11 @@ namespace MediQ.MVC.Controller
 
         //Used to create appointments on user side
         //Skipped appointment_status as this will always yield Pending
-        public void createAppointment(int user_ID, int doctor_ID, string date, string time)
+        public void createAppointment(int user_ID, int doctor_ID, DateTime date, TimeSpan time)
         {
-            DateTime input_date;
-            DateTime.TryParse(date, out input_date);
-
-            TimeSpan input_time;
-            TimeSpan.TryParse(time, out input_time);
 
             string sql = $"INSERT INTO Appointment(user_ID, doctor_ID, appointment_date, appointment_time)" +
-                         $"VALUES('{user_ID}', '{doctor_ID}', '{input_date}', '{input_time}')";
+                         $"VALUES('{user_ID}', '{doctor_ID}', '{date.ToString()}', '{time.ToString()}')";
 
             this.dc.insertData(sql);
         }

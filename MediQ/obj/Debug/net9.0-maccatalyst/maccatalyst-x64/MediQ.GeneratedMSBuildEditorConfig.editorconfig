@@ -36,6 +36,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[D:/C\# Project/MediQ/MediQ/MVC/View/BookingView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.BookingView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVC\View\BookingView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVC\View\BookingView.xaml
+
+[D:/C\# Project/MediQ/MediQ/MVC/View/Modals/AppointmentConfirmation.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.Modals.AppointmentConfirmation.xaml
+build_metadata.AdditionalFiles.TargetPath = MVC\View\Modals\AppointmentConfirmation.xaml
+build_metadata.AdditionalFiles.RelativePath = MVC\View\Modals\AppointmentConfirmation.xaml
+
+[D:/C\# Project/MediQ/MediQ/MVC/View/Modals/BackToHome.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.Modals.BackToHome.xaml
+build_metadata.AdditionalFiles.TargetPath = MVC\View\Modals\BackToHome.xaml
+build_metadata.AdditionalFiles.RelativePath = MVC\View\Modals\BackToHome.xaml
+
 [D:/C\# Project/MediQ/MediQ/MVC/View/SearchView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.SearchView.xaml

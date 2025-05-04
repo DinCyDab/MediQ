@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.BookingView">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#F1F9FF"
+                             Padding="20"
+                             x:Name="main_layout">
+            <Label Text="Book Appointment"
+                   TextColor="#095D7E"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+            <Label Text="Dr. Juan Dela Cruz - Dermatologist"
+                   x:Name="doctor_name"
+                   TextColor="Grey"
+                   Margin="10"
+                   FontSize="10"/>
+            <VerticalStackLayout>
+                <Frame BackgroundColor="#095D7E"
+                       BorderColor="Transparent">
+                    <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*"
+                          x:Name="data_holder">
+                        <!--<Border Grid.Row="0"
+                                Stroke="Transparent">
+                            <VerticalStackLayout>
+                                <Label Text="May 4"
+                                       Margin="0, 0, 0, 10"
+                                       FontAttributes="Bold"/>
+                                <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, *, *"
+                                      ColumnSpacing="5"
+                                      RowSpacing="5">
+                                    <Frame Padding="0"
+                                           HeightRequest="30"
+                                           BackgroundColor="LightBlue"
+                                           CornerRadius="8"
+                                           BorderColor="Transparent"
+                                           Grid.Row="0"
+                                           Grid.Column="0">
+                                        <Label Text="9 AM"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"
+                                               FontSize="12"
+                                               TextColor="#095D7E"
+                                               FontAttributes="Bold"/>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="testBook"/>
+                                        </Frame.GestureRecognizers>
+                                    </Frame>
+                                </Grid>
+                            </VerticalStackLayout>
+                        </Border>-->
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="Transparent"
+                       BorderColor="Transparent">
+                    <Grid RowDefinitions="*" ColumnDefinitions="*, *"
+                          ColumnSpacing="50">
+                        <Button Text="Cancel"
+                                Grid.Column="0"
+                                BackgroundColor="White"
+                                FontAttributes="Bold"
+                                TextColor="#095D7E"
+                                Clicked="goBack"/>
+                        <Button x:Name="send_button"
+                                Clicked="openConfirmation"
+                                Text="Send"
+                                Grid.Column="1"
+                                FontAttributes="Bold"
+                                BackgroundColor="#095D7E"
+                                TextColor="White"/>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

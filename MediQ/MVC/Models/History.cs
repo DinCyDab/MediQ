@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MediQ.MVC.Models
 {
-    class History
+    public class History
     {
         public int user_ID { get; set; }
         public int doctor_ID { get; set; }

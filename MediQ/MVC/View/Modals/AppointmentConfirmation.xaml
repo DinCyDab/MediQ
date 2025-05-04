@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.Modals.AppointmentConfirmation">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="AliceBlue"
+                             Padding="20">
+            <Label Text="Confirm Appointment"
+               HorizontalOptions="Center"
+               TextColor="#095D7E"
+               FontSize="22"
+               FontAttributes="Bold"/>
+
+            <Frame Margin="30"
+               BackgroundColor="#095D7E"
+               CornerRadius="10"
+               Padding="15"
+               BorderColor="Transparent"
+                   HeightRequest="300"
+                   VerticalOptions="Center">
+                <Label x:Name="text_output"
+                   Text="Send an appointment to Dr. Juan Dela Cruz on May 6 at 9:00 AM?"
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Grid RowDefinitions="*" ColumnDefinitions="*, *"
+                  ColumnSpacing="20">
+                <Button Grid.Column="0"
+                        Text="Cancel"
+                        BackgroundColor="White"
+                        TextColor="#095D7E"
+                        FontAttributes="Bold"
+                        Clicked="goBack"/>
+                <Button Grid.Column="1"
+                        Text="Confirm"
+                        BackgroundColor="#095D7E"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Clicked="createAppointment"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
