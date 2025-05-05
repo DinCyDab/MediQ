@@ -1,6 +1,7 @@
 ﻿using MediQ.MVC.Controller;
 using MediQ.MVC.Models;
 using Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.AppCompat;
+using Microsoft.Maui.Controls.Shapes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace MediQ.MVC.View
         public void goToBookingPage(int doctor_ID)
         {
             Navigation.PushAsync(new BookingView(doctor_ID));
+        }
+
+        private void goToDoctorProfile(Doctors doctor)
+        {
+            Navigation.PushAsync(new DoctorProfile(doctor));
         }
 
         public void searchForDoctor(object sender, EventArgs e)
@@ -67,11 +73,11 @@ namespace MediQ.MVC.View
 
         public void testCreate(Doctors doctor)
         {
-            var frame = createFrame();
+            var frame = createFrame(doctor);
             var grid = createGrid();
-            var doctor_image = createImage("user.png");
+            var doctor_image = createImage(doctor.image_link);
             var v_layout = createVerticalLayout("Dr. " + doctor.first_name + " " + doctor.last_name, doctor.category.category_name);
-            var h_layout = createHorizontalLayout(doctor.doctor_ID);
+            var h_layout = createHorizontalLayout(doctor);
 
             grid.Children.Add(doctor_image);
             grid.Children.Add(v_layout);
@@ -85,7 +91,7 @@ namespace MediQ.MVC.View
             stack_layout.Add(frame);
         }
 
-        public Frame createFrame()
+        public Frame createFrame(Doctors doctor)
         {
             var frame = new Frame
             {
@@ -96,7 +102,10 @@ namespace MediQ.MVC.View
             };
 
             var tap_gesture = new TapGestureRecognizer();
-            tap_gesture.Tapped += goToMainPage;
+            tap_gesture.Tapped += (s, e) =>
+            {
+                goToDoctorProfile(doctor);
+            };
             frame.GestureRecognizers.Add(tap_gesture);
 
             return frame;
@@ -112,6 +121,15 @@ namespace MediQ.MVC.View
                 VerticalOptions = LayoutOptions.Center,
                 HorizontalOptions = LayoutOptions.Center
             };
+
+            var ellipse = new EllipseGeometry
+            {
+                Center = new Point(25, 25),
+                RadiusX = 25,
+                RadiusY = 25
+            };
+
+            doctor_image.Clip = ellipse;
 
             return doctor_image;
         }
@@ -154,7 +172,7 @@ namespace MediQ.MVC.View
             return v_layout;
         }
 
-        public HorizontalStackLayout createHorizontalLayout(int doctor_ID)
+        public HorizontalStackLayout createHorizontalLayout(Doctors doctor)
         {
             var h_layout = new HorizontalStackLayout
             {
@@ -162,16 +180,16 @@ namespace MediQ.MVC.View
                 HorizontalOptions = LayoutOptions.End
             };
 
-            var border1 = createBorder("send.png",doctor_ID);
+            var border1 = createBorder("send.png", doctor);
             h_layout.Add(border1);
 
-            var border2 = createBorder("person.png", doctor_ID);
+            var border2 = createBorder("person.png", doctor);
             h_layout.Add(border2);
 
             return h_layout;
         }
 
-        public Border createBorder(string image_link, int doctor_ID)
+        public Border createBorder(string image_link, Doctors doctor)
         {
             var border = new Border
             {
@@ -186,11 +204,21 @@ namespace MediQ.MVC.View
             };
 
             var tap_recognizer = new TapGestureRecognizer();
-            tap_recognizer.Tapped += (s, e) =>
+            if(image_link == "send.png")
             {
-                goToBookingPage(doctor_ID);
-            };
-            image_option_send.GestureRecognizers.Add(tap_recognizer);
+                tap_recognizer.Tapped += (s, e) =>
+                {
+                    goToBookingPage(doctor.doctor_ID);
+                };
+            }
+            else if(image_link == "person.png")
+            {
+                tap_recognizer.Tapped += (s, e) =>
+                {
+                    goToDoctorProfile(doctor);
+                };
+            }
+                image_option_send.GestureRecognizers.Add(tap_recognizer);
 
             border.Content = image_option_send;
 

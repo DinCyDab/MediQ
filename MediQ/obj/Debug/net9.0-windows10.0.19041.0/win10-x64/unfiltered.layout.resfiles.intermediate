@@ -1,7 +1,4 @@
 runtimes\win-x64\native\WebView2Loader.dll
-FluentUI.cs
-OpenSans-Regular.ttf
-OpenSans-Semibold.ttf
 appicon.ico
 appiconLargeTile.scale-100.png
 appiconLargeTile.scale-125.png
@@ -48,6 +45,7 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+doctor1.scale-100.jpg
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
@@ -57,9 +55,4 @@ person.scale-100.png
 search.scale-100.png
 send.scale-100.png
 user.scale-100.png
-splashSplashScreen.scale-100.png
-splashSplashScreen.scale-125.png
-splashSplashScreen.scale-150.png
-splashSplashScreen.scale-200.png
-splashSplashScreen.scale-400.png
 AboutAssets.txt

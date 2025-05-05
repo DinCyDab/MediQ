@@ -30,11 +30,11 @@
                     </Border>
                 </Grid>
             </Frame>
-            <ContentView SemanticProperties.Description="Category"
+            <!--<ContentView SemanticProperties.Description="Category"
                 BackgroundColor="AliceBlue"
                 Padding="10">
 
-            </ContentView>
+            </ContentView>-->
             <BoxView BackgroundColor="#095D7E"
                      HeightRequest="5"/>
             <VerticalStackLayout x:Name="stack_layout">
@@ -42,7 +42,7 @@
                        HorizontalOptions="Center"
                        TextColor="Black"
                        Margin="20"/>
-                <!--<Frame CornerRadius="10"
+                <Frame CornerRadius="10"
                    Margin="10"
                    BackgroundColor="#CCECEE"
                    BorderColor="Transparent">
@@ -56,7 +56,11 @@
                        WidthRequest="50"
                        HeightRequest="50"
                        VerticalOptions="Center"
-                       HorizontalOptions="Center" />
+                       HorizontalOptions="Center">
+                            <Image.Clip>
+                                <EllipseGeometry Center="25, 25" RadiusX="25" RadiusY="25"/>
+                            </Image.Clip>
+                        </Image>
                         <VerticalStackLayout Grid.Column="1"
                                          Spacing="2"
                                          VerticalOptions="Center">
@@ -90,7 +94,7 @@
                             </Border>
                         </HorizontalStackLayout>
                     </Grid>
-                </Frame>-->
+                </Frame>
 
             </VerticalStackLayout>
         </VerticalStackLayout>

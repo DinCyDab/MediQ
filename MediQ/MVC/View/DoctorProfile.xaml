@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.DoctorProfile">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="0"
+            Spacing="25"
+            BackgroundColor="AliceBlue">
+            <Frame Margin="15"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+                <Image x:Name="doctor_profile"
+                       Aspect="AspectFit" 
+                       Source="dotnet_bot.png"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       HeightRequest="150"
+                       WidthRequest="150">
+                    <Image.Clip>
+                        <EllipseGeometry Center="75,75" RadiusX="75" RadiusY="75"/>
+                    </Image.Clip>
+                </Image>
+            </Frame>
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+                <Frame BackgroundColor="Transparent"
+                       BorderColor="Transparent"
+                       Grid.Row="0">
+                    <VerticalStackLayout>
+                        <Label x:Name="doctor_name"
+                               Text="Dr. Juan Dela Cruz"
+                               TextColor="#095D7E"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               Margin="0, 0, 0, 10"/>
+                        <Label Text="Location"
+                               TextColor="#095D7E"
+                               FontSize="15"
+                               FontAttributes="Bold"/>
+                        <Label x:Name="doctor_location"
+                               Text="2457 Evergreen Lane, Barangay Malinis, Quezon City, Metro Manila, 1102, Philippines"
+                               TextColor="Black"
+                               FontSize="12"
+                               Margin="10"/>
+                        <Label Text="Expertise"
+                               TextColor="#095D7E"
+                               FontSize="15"
+                               FontAttributes="Bold"/>
+                        <Label x:Name="doctor_category"
+                               Text="Neurologist"
+                               TextColor="Black"
+                               FontSize="12"
+                               Margin="10"/>
+                    </VerticalStackLayout>
+
+                </Frame>
+                <Grid Grid.Row="1"
+                      RowDefinitions="*"
+                      ColumnDefinitions="*, *">
+                    <Frame BackgroundColor="Transparent"
+                       BorderColor="Transparent"
+                       Grid.Column="0">
+                        <Button Text="Back"
+                            FontAttributes="Bold"
+                            TextColor="#095D7E"
+                            BackgroundColor="White"
+                            FontSize="12"
+                            Clicked="backToPage"/>
+                    </Frame>
+                    <Frame BackgroundColor="Transparent"
+                       BorderColor="Transparent"
+                       Grid.Column="1">
+                        <Button Clicked="setAppointment" 
+                            Text="Send Appointment"
+                            FontAttributes="Bold"
+                            TextColor="#CCECEE"
+                            BackgroundColor="#095D7E"
+                            FontSize="12"/>
+                    </Frame>
+                </Grid>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

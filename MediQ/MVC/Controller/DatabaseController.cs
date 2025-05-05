@@ -126,6 +126,7 @@ namespace MediQ.MVC.Controller
                 doctor.last_name = (string)reader["last_name"];
                 doctor.location = (string)reader["location"];
                 doctor.status = (string)reader["status"];
+                doctor.image_link = (string)reader["doctor_image"];
 
                 category.category_ID = (int)reader["category_ID"];
                 category.category_name = (string)reader["category_name"];
@@ -156,6 +157,7 @@ namespace MediQ.MVC.Controller
                 doctor.last_name = (string)reader["last_name"];
                 doctor.location = (string)reader["location"];
                 doctor.status = (string)reader["status"];
+                doctor.image_link = (string)reader["doctor_image"];
 
                 category.category_ID = (int)reader["category_ID"];
                 category.category_name = (string)reader["category_name"];

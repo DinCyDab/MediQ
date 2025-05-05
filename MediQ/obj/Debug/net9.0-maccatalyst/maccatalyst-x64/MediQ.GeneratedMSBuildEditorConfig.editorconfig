@@ -42,6 +42,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.BookingView
 build_metadata.AdditionalFiles.TargetPath = MVC\View\BookingView.xaml
 build_metadata.AdditionalFiles.RelativePath = MVC\View\BookingView.xaml
 
+[D:/C\# Project/MediQ/MediQ/MVC/View/DoctorProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.DoctorProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = MVC\View\DoctorProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = MVC\View\DoctorProfile.xaml
+
 [D:/C\# Project/MediQ/MediQ/MVC/View/Modals/AppointmentConfirmation.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.Modals.AppointmentConfirmation.xaml

@@ -15,5 +15,6 @@ namespace MediQ.MVC.Models
         public string location { get; set; }
         public Category category { get; set; }
         public string status { get; set; }
+        public string image_link { get; set; }
     }
 }
