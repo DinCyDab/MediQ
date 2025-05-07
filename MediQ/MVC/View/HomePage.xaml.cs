@@ -14,12 +14,20 @@ namespace MediQ.MVC.View
         public HomePage()
         {
             InitializeComponent();
-            user_name.Text = $"Hello {MainPage.user.first_name}";
+            initializeUser();
             loadHistory();
+
+            //Better if it would suggest dynamically
             createSuggestion("Neurologist");
             createSuggestion("Dermatologist");
             createSuggestion("Cardiologist");
+            
             createArrowFrame();
+        }
+
+        private void initializeUser()
+        {
+            user_name.Text = $"Hello, {MainPage.user.first_name}";
         }
 
         private async void OnArrowTapped(object sender, EventArgs e)

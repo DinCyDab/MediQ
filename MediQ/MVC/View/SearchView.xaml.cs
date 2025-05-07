@@ -18,7 +18,29 @@ namespace MediQ.MVC.View
         {
             InitializeComponent();
         }
+        private async void OnHomeTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
+        }
 
+        private async void OnSearchTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchView());
+        }
+
+        private async void OnCalendarTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CalendarPage());
+        }
+
+        private async void OnProfileTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProfilePage());
+        }
+        private async void OnNotificationsTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NotificationsPage());
+        }
         public SearchView(string text)
         {
             InitializeComponent();
@@ -50,7 +72,8 @@ namespace MediQ.MVC.View
                     Text = "Try searching for a doctor. The list will appear here.",
                     HorizontalOptions = LayoutOptions.Center,
                     TextColor = Color.FromArgb(""),
-                    Margin = 20
+                    Margin = 20,
+                    HorizontalTextAlignment = TextAlignment.Center
                 };
                 stack_layout.Add(err_label);
 
@@ -65,7 +88,8 @@ namespace MediQ.MVC.View
                     Text = "Oops! We couldn't find any matching doctors.",
                     HorizontalOptions = LayoutOptions.Center,
                     TextColor = Color.FromArgb(""),
-                    Margin = 20
+                    Margin = 20,
+                    HorizontalTextAlignment = TextAlignment.Center
                 };
                 stack_layout.Add(err_label);
                 return;

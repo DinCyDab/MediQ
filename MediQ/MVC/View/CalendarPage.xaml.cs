@@ -8,6 +8,10 @@ namespace MediQ.MVC.View
 {
     public partial class CalendarPage : ContentPage
     {
+        public CalendarPage()
+        {
+            InitializeComponent();
+        }
         private async void OnArrowTapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SearchView());
