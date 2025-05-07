@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.HomePage"
+             BackgroundColor="White">
+
+    <Grid RowDefinitions="*, Auto" Padding="0">
+        <ScrollView Grid.Row="0" Padding="20">
+            <VerticalStackLayout Spacing="15">
+                <Grid ColumnDefinitions="Auto, *, Auto"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="Start"
+                      Padding="0,0,0,10">
+
+                    <!-- Logo -->
+                    <Image Source="medlogo.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           VerticalOptions="Center"
+                           Grid.Column="0" />
+
+                    <!-- Greeting -->
+                    <Label Text="Hello, User!"
+                           TextColor="Black"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="1" />
+
+                    <!-- Notifications Icon -->
+                    <Image Source="notif_icon.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           VerticalOptions="Center"
+                           HorizontalOptions="End"
+                           Grid.Column="2">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNotificationsTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+
+                <!-- Highlights box -->
+                <Frame CornerRadius="10"
+                       Padding="10"
+                       BackgroundColor="#095D7E"
+                       BorderColor="White"
+                       HasShadow="True"
+                       Margin="0,15,0,0">
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Highlights"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               Margin="0,0,0,5" />
+
+                        <!-- Announcement 1 -->
+                        <Frame Padding="8"
+                               CornerRadius="5"
+                               BorderColor="#d0d0d0"
+                               HasShadow="True"
+                               BackgroundColor="#ffffff">
+                            <VerticalStackLayout>
+                                <Label Text="Clinic closed on May 5 (Labor Day)"
+                                       FontSize="10"
+                                       TextColor="Black"
+                                       FontAttributes="Bold" />
+                                <Label Text="We will be closed on May 5 in observance of Labor Day. Please plan accordingly."
+                                       FontSize="8"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                        </Frame>
+
+                        <!-- Announcement 2 -->
+                        <Frame Padding="8"
+                               CornerRadius="5"
+                               BorderColor="#d0d0d0"
+                               HasShadow="True"
+                               BackgroundColor="#ffffff">
+                            <VerticalStackLayout>
+                                <Label Text="New health packages now available"
+                                       FontSize="10"
+                                       TextColor="Black"
+                                       FontAttributes="Bold" />
+                                <Label Text="We have introduced new health packages. Check out the details on our website."
+                                       FontSize="8"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Recently Viewed Label -->
+                <Label Text="Recently Viewed"
+                       FontSize="18"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+                       TextColor="Black"
+                       Margin="10,15,0,0"
+                       FontAttributes="Bold" />
+
+                <!-- Recently Viewed Images -->
+                <HorizontalStackLayout Spacing="15" HorizontalOptions="Start">
+                    <Frame WidthRequest="60"
+                           HeightRequest="60"
+                           CornerRadius="30"
+                           Padding="0"
+                           HasShadow="False"
+                           IsClippedToBounds="True"
+                           BorderColor="Transparent">
+                        <Image Source="doctor1.png" Aspect="AspectFill" WidthRequest="60" HeightRequest="60" />
+                    </Frame>
+
+                    <Frame WidthRequest="60"
+                           HeightRequest="60"
+                           CornerRadius="30"
+                           Padding="0"
+                           HasShadow="False"
+                           IsClippedToBounds="True"
+                           BorderColor="Transparent">
+                        <Image Source="doctor2.png" Aspect="AspectFill" WidthRequest="60" HeightRequest="60" />
+                    </Frame>
+
+                    <Frame WidthRequest="60"
+                           HeightRequest="60"
+                           CornerRadius="30"
+                           Padding="0"
+                           HasShadow="False"
+                           IsClippedToBounds="True"
+                           BorderColor="Transparent">
+                        <Image Source="doctor3.png" Aspect="AspectFill" WidthRequest="60" HeightRequest="60" />
+                    </Frame>
+                </HorizontalStackLayout>
+
+                <!-- What are you looking for Label -->
+                <Label Text="What are you looking for?"
+                       FontSize="17"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+                       TextColor="Black"
+                       Margin="10,20,0,0"
+                       FontAttributes="Bold" />
+
+                <!-- Horizontal scrollable pill list -->
+                <ScrollView Orientation="Horizontal">
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Start">
+                        <Frame Padding="12,4"
+                               CornerRadius="15"
+                               BackgroundColor="#095D7E"
+                               HasShadow="False"
+                               BorderColor="#095D7E">
+                            <Label Text="Cardiologist"
+                                   FontSize="12"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+                        </Frame>
+
+                        <Frame Padding="12,4"
+                               CornerRadius="15"
+                               BackgroundColor="#14967F"
+                               HasShadow="False"
+                               BorderColor="#14967F">
+                            <Label Text="Dermatologist"
+                                   FontSize="12"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+                        </Frame>
+
+                        <Frame Padding="12,4"
+                               CornerRadius="15"
+                               BackgroundColor="#59B783"
+                               HasShadow="False"
+                               BorderColor="#59B783">
+                            <Label Text="Pediatrician"
+                                   FontSize="12"
+                                   TextColor="White"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+                        </Frame>
+
+                        <Frame Padding="12,4"
+                               CornerRadius="15"
+                               BackgroundColor="#E0E0E0"
+                               HasShadow="False"
+                               BorderColor="#B0B0B0"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center">
+                            <Image Source="arrow_right.png" WidthRequest="20" HeightRequest="20">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnArrowTapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Frame>
+                    </HorizontalStackLayout>
+                </ScrollView>
+
+                <!-- Inspirational Quote -->
+                <Frame CornerRadius="12"
+                       Padding="20"
+                       BackgroundColor="#E6F2F8"
+                       BorderColor="#B0D4E3"
+                       HasShadow="True"
+                       Margin="0,15,0,0">
+                    <VerticalStackLayout Spacing="6" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="“Your health is an investment, not an expense.”"
+                               FontSize="14"
+                               FontAttributes="Italic"
+                               TextColor="#095D7E"
+                               HorizontalTextAlignment="Center"
+                               LineBreakMode="WordWrap" />
+                        <Label Text="- Medique"
+                               FontSize="12"
+                               TextColor="Gray"
+                               HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Floating Navigation Bar -->
+        <Frame Grid.Row="1"
+               HeightRequest="60"
+               CornerRadius="30"
+               BackgroundColor="#095D7E"
+               BorderColor="#E0E0E0"
+               HasShadow="True"
+               Padding="10"
+               Margin="20,0,20,20">
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30">
+                <!-- Home Icon -->
+                <Image Source="onhome_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnHomeTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Search Icon -->
+                <Image Source="search_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSearchTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Calendar Icon -->
+                <Image Source="calendar_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCalendarTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Profile Icon -->
+                <Image Source="profile_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnProfileTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </HorizontalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

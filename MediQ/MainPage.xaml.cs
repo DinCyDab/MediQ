@@ -25,15 +25,37 @@ namespace MediQ
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
 
-        private async void goToSearchPage(object sender, EventArgs e)
+        private async void GoToSearchPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SearchView());
         }
 
-        private async void goToBookingPage(object sender, EventArgs e)
+        private async void GoToHomePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BookingView());
+            await Navigation.PushAsync(new HomePage());
         }
+
+
+        private async void GoToCalendarPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CalendarPage());
+        }
+
+        private async void GoToBookingPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BookingPage());
+        }
+
+        private async void GoToProfilePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProfilePage());
+        }
+
+        private async void GoToNotificationsPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NotificationsPage());
+        }
+
     }
 
 }

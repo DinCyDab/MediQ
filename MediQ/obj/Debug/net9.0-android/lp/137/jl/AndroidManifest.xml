@@ -3,5 +3,7 @@
     package="androidx.appcompat" >
 
     <uses-sdk android:minSdkVersion="21" />
+    <!-- package="androidx.constraintlayout.widget" -->
+    <application />
 
 </manifest>

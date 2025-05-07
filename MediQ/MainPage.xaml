@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MediQ.MainPage">
+             x:Class="MediQ.MainPage"
+             Title="Main Page">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -34,14 +34,35 @@
             <Button
                 x:Name="SearchButton"
                 Text="Search"
-                Clicked="goToSearchPage"/>
-            
-            <Button
-                Text="Booking"
-                Clicked="goToBookingPage"/>
+                Clicked="GoToSearchPage" />
 
-            <Label
-                x:Name="user_output"/>
+            <Button
+                x:Name="HomePageButton"
+                Text="Home"
+                Clicked="GoToHomePage" />
+
+            <Button
+                x:Name="CalendarPageButton"
+                Text="Calendar"
+                Clicked="GoToCalendarPage" />
+
+            <Button
+                x:Name="BookingPageButton"
+                Text="Booking"
+                Clicked="GoToBookingPage" />
+
+            <Button
+                x:Name="ProfilePageButton"
+                Text="Profile"
+                Clicked="GoToProfilePage" />
+
+            <Button
+                x:Name="NotificationsPageButton"
+                Text="Notifications"
+                Clicked="GoToNotificationsPage" />    
+
+            <Label x:Name="user_output" />
+
         </VerticalStackLayout>
     </ScrollView>
 
