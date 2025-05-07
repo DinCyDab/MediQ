@@ -18,6 +18,12 @@ namespace MediQ.MVC.View
         {
             InitializeComponent();
         }
+
+        public SearchView(string text)
+        {
+            InitializeComponent();
+            search_box.Text = text;
+        }
         public async void goToMainPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());

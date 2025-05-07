@@ -43,11 +43,15 @@ namespace MediQ.MVC.Controller
         {
             List<History> list_of_history = null;
 
-            string sql = $"SELECT doctor_ID, MAX(view_date) AS view_date, MAX(view_time) AS view_time " +
-                         $"FROM Viewed " +
-                         $"WHERE user_ID = {user_ID} " +
-                         $"GROUP BY doctor_ID " +
-                         $"ORDER BY view_date DESC, view_time DESC";
+            string sql = $"SELECT d.*, v.history_ID, c.* FROM Doctors d " +
+                         $"JOIN ( " +
+                         $"    SELECT doctor_ID, MAX(history_ID) AS history_ID " +
+                         $"    FROM Viewed v " +
+                         $"    WHERE user_ID = {user_ID} " +
+                         $"   GROUP BY doctor_ID " +
+                         $") v ON d.doctor_ID = v.doctor_ID " +
+                         $"JOIN Category c ON d.category_ID = c.category_ID " +
+                         $"ORDER BY v.history_ID DESC";
 
             list_of_history = this.dc.loadUserHistory(sql);
 
@@ -55,21 +59,21 @@ namespace MediQ.MVC.Controller
         }
 
         //Used to load the search history of the user but returns the list of doctor objects
-        public List<Doctors> loadRecentSearched(int user_ID)
-        {
-            List<Doctors> list_of_doctors = new List<Doctors>();
-            List<History> list_of_history = loadHistory(user_ID);
+        //public List<Doctors> loadRecentSearched(int user_ID)
+        //{
+        //    List<Doctors> list_of_doctors = new List<Doctors>();
+        //    List<History> list_of_history = loadHistory(user_ID);
 
-            for(int i = 0; i < list_of_history.Count; i++)
-            {
-                Doctors doctor = new Doctors();
-                string sql = $"SELECT * FROM Doctors " +
-                             $"WHERE doctor_ID =  {list_of_history[i].doctor_ID}";
-                list_of_doctors.Add(this.dc.loadDoctor(sql));
-            }
+        //    for(int i = 0; i < list_of_history.Count; i++)
+        //    {
+        //        Doctors doctor = new Doctors();
+        //        string sql = $"SELECT * FROM Doctors " +
+        //                     $"WHERE doctor_ID =  {list_of_history[i].doctor_ID}";
+        //        list_of_doctors.Add(this.dc.loadDoctor(sql));
+        //    }
 
-            return list_of_doctors;
-        }
+        //    return list_of_doctors;
+        //}
 
         public Doctors loadDoctor(int doctor_ID)
         {

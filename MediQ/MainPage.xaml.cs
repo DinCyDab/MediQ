@@ -7,10 +7,14 @@ namespace MediQ
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        UserController uc = new();
+        public static User user = new User();
 
         public MainPage()
         {
             InitializeComponent();
+            MainPage.user.user_ID = -1;
+            MainPage.user = this.uc.loadUser("1234", "1231");
         }
 
         private void OnCounterClicked(object sender, EventArgs e)

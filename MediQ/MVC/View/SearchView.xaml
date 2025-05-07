@@ -42,7 +42,7 @@
                        HorizontalOptions="Center"
                        TextColor="Black"
                        Margin="20"/>
-                <Frame CornerRadius="10"
+                <!--<Frame CornerRadius="10"
                    Margin="10"
                    BackgroundColor="#CCECEE"
                    BorderColor="Transparent">
@@ -94,7 +94,7 @@
                             </Border>
                         </HorizontalStackLayout>
                     </Grid>
-                </Frame>
+                </Frame>-->
 
             </VerticalStackLayout>
         </VerticalStackLayout>

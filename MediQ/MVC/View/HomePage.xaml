@@ -20,7 +20,8 @@
                            Grid.Column="0" />
 
                     <!-- Greeting -->
-                    <Label Text="Hello, User!"
+                    <Label x:Name="user_name"
+                           Text="Hello, User!"
                            TextColor="Black"
                            FontSize="18"
                            FontAttributes="Bold"
@@ -101,8 +102,8 @@
                        FontAttributes="Bold" />
 
                 <!-- Recently Viewed Images -->
-                <HorizontalStackLayout Spacing="15" HorizontalOptions="Start">
-                    <Frame WidthRequest="60"
+                <HorizontalStackLayout x:Name="history_list" Spacing="15" HorizontalOptions="Start">
+                    <!--<Frame WidthRequest="60"
                            HeightRequest="60"
                            CornerRadius="30"
                            Padding="0"
@@ -130,7 +131,7 @@
                            IsClippedToBounds="True"
                            BorderColor="Transparent">
                         <Image Source="doctor3.png" Aspect="AspectFill" WidthRequest="60" HeightRequest="60" />
-                    </Frame>
+                    </Frame>-->
                 </HorizontalStackLayout>
 
                 <!-- What are you looking for Label -->
@@ -144,8 +145,8 @@
 
                 <!-- Horizontal scrollable pill list -->
                 <ScrollView Orientation="Horizontal">
-                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Start">
-                        <Frame Padding="12,4"
+                    <HorizontalStackLayout x:Name="suggestion" Spacing="10" HorizontalOptions="Start">
+                        <!--<Frame Padding="12,4"
                                CornerRadius="15"
                                BackgroundColor="#095D7E"
                                HasShadow="False"
@@ -179,9 +180,9 @@
                                    TextColor="White"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
-                        </Frame>
+                        </Frame>-->
 
-                        <Frame Padding="12,4"
+                        <!--<Frame Padding="12,4"
                                CornerRadius="15"
                                BackgroundColor="#E0E0E0"
                                HasShadow="False"
@@ -193,7 +194,7 @@
                                     <TapGestureRecognizer Tapped="OnArrowTapped" />
                                 </Image.GestureRecognizers>
                             </Image>
-                        </Frame>
+                        </Frame>-->
                     </HorizontalStackLayout>
                 </ScrollView>
 

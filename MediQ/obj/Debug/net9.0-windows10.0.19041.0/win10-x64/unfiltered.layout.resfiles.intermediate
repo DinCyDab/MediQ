@@ -1,3 +1,4 @@
+runtimes\win-x64\native\WebView2Loader.dll
 FluentUI.cs
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
@@ -55,6 +56,10 @@ doctor1.scale-100.png
 doctor2.scale-100.png
 doctor3.scale-100.png
 dotnet_bot.scale-100.png
+dotnet_bot.scale-125.png
+dotnet_bot.scale-150.png
+dotnet_bot.scale-200.png
+dotnet_bot.scale-400.png
 home_icon.scale-100.png
 medlogo.scale-100.png
 notif_icon.scale-100.png
@@ -68,4 +73,9 @@ search.scale-100.png
 search_icon.scale-100.png
 send.scale-100.png
 user.scale-100.png
+splashSplashScreen.scale-100.png
+splashSplashScreen.scale-125.png
+splashSplashScreen.scale-150.png
+splashSplashScreen.scale-200.png
+splashSplashScreen.scale-400.png
 AboutAssets.txt
