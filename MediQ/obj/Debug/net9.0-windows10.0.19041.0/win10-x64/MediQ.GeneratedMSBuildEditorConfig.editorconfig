@@ -8,7 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MediQ
-build_property.ProjectDir = D:\C# Project\MediQ\MediQ\
+build_property.ProjectDir = C:\Users\tldra\source\repos\MediQ---Dale\MediQ\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -22,61 +22,67 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/C\# Project/MediQ/MediQ/App.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/C\# Project/MediQ/MediQ/AppShell.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/C\# Project/MediQ/MediQ/MainPage.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/C\# Project/MediQ/MediQ/MVC/View/BookingView.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/MVC/View/BookingView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.BookingView.xaml
 build_metadata.AdditionalFiles.TargetPath = MVC\View\BookingView.xaml
 build_metadata.AdditionalFiles.RelativePath = MVC\View\BookingView.xaml
 
-[D:/C\# Project/MediQ/MediQ/MVC/View/DoctorProfile.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/MVC/View/DoctorProfile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.DoctorProfile.xaml
 build_metadata.AdditionalFiles.TargetPath = MVC\View\DoctorProfile.xaml
 build_metadata.AdditionalFiles.RelativePath = MVC\View\DoctorProfile.xaml
 
-[D:/C\# Project/MediQ/MediQ/MVC/View/Modals/AppointmentConfirmation.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/MVC/View/Modals/AppointmentConfirmation.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.Modals.AppointmentConfirmation.xaml
 build_metadata.AdditionalFiles.TargetPath = MVC\View\Modals\AppointmentConfirmation.xaml
 build_metadata.AdditionalFiles.RelativePath = MVC\View\Modals\AppointmentConfirmation.xaml
 
-[D:/C\# Project/MediQ/MediQ/MVC/View/Modals/BackToHome.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/MVC/View/Modals/BackToHome.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.Modals.BackToHome.xaml
 build_metadata.AdditionalFiles.TargetPath = MVC\View\Modals\BackToHome.xaml
 build_metadata.AdditionalFiles.RelativePath = MVC\View\Modals\BackToHome.xaml
 
-[D:/C\# Project/MediQ/MediQ/MVC/View/SearchView.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/MVC/View/SearchView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.SearchView.xaml
 build_metadata.AdditionalFiles.TargetPath = MVC\View\SearchView.xaml
 build_metadata.AdditionalFiles.RelativePath = MVC\View\SearchView.xaml
 
-[D:/C\# Project/MediQ/MediQ/Resources/Styles/Colors.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/MVC/View/UserProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediQ.MVC.View.UserProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVC\View\UserProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVC\View\UserProfileView.xaml
+
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/C\# Project/MediQ/MediQ/Resources/Styles/Styles.xaml]
+[C:/Users/tldra/source/repos/MediQ---Dale/MediQ/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediQ.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

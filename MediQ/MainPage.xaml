@@ -39,7 +39,9 @@
             <Button
                 Text="Booking"
                 Clicked="goToBookingPage"/>
-
+            <Button
+             Text="Profile"
+             Clicked="goToProfilePage"/>
             <Label
                 x:Name="user_output"/>
         </VerticalStackLayout>
