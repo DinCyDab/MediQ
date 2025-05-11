@@ -33,7 +33,7 @@ namespace MediQ.MVC.View.Modals
 
         public void createAppointment(object sender, EventArgs e)
         {
-            ac.createAppointment(1, doctor.doctor_ID, schedule.date, schedule.time);
+            ac.createAppointment(MainPage.user.user_ID, doctor.doctor_ID, schedule.date, schedule.time);
             Navigation.PushAsync(new BackToHome());
         }
 

@@ -1,4 +1,5 @@
-﻿using MediQ.MVC.Models;
+﻿using MediQ.MVC.Controller;
+using MediQ.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace MediQ.MVC.View
 {
     public partial class DoctorProfile : ContentPage
     {
+        SearchController search_c = new();
         Doctors doctor = new();
         public DoctorProfile()
         {
@@ -19,6 +21,7 @@ namespace MediQ.MVC.View
         {
             InitializeComponent();
             this.doctor = doctor;
+            addToHistory();
             initializePage();
         }
 
@@ -38,6 +41,11 @@ namespace MediQ.MVC.View
             doctor_location.Text = this.doctor.location;
             doctor_category.Text = this.doctor.category.category_name;
             doctor_profile.Source = this.doctor.image_link;
+        }
+
+        private void addToHistory()
+        {
+            this.search_c.addToHistory(MainPage.user.user_ID, this.doctor.doctor_ID);
         }
     }
 }

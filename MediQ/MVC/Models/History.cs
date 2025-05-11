@@ -9,9 +9,10 @@ namespace MediQ.MVC.Models
 {
     public class History
     {
+        public int history_ID { get; set; }
         public int user_ID { get; set; }
-        public int doctor_ID { get; set; }
-        public DateTime view_date { get; set; }
-        public TimeSpan view_time { get; set; }
+        public Doctors doctor { get; set; }
+        public DateTime date { get; set; }
+        public TimeSpan time { get; set; }
     }
 }
