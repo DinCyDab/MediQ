@@ -13,8 +13,14 @@ namespace MediQ
         public MainPage()
         {
             InitializeComponent();
-            MainPage.user.user_ID = -1;
-            MainPage.user = this.uc.loadUser("1234", "1231");
+            MainPage.user = new User
+            {
+                user_ID = 1,
+                email = "dummy@example.com",
+                password = "password123",
+                first_name = "Dummy",
+                last_name = "User"
+            };
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -52,7 +58,7 @@ namespace MediQ
 
         private async void GoToProfilePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProfilePage());
+            await Navigation.PushAsync(new UserProfileView());
         }
 
         private async void GoToNotificationsPage(object sender, EventArgs e)

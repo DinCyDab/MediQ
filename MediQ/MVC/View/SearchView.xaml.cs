@@ -35,7 +35,7 @@ namespace MediQ.MVC.View
 
         private async void OnProfileTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProfilePage());
+            await Navigation.PushAsync(new UserProfileView());
         }
         private async void OnNotificationsTapped(object sender, EventArgs e)
         {

@@ -102,14 +102,15 @@
             </VerticalStackLayout>
         </ScrollView>
 
+        <!-- Floating Navigation Bar -->
         <Frame Grid.Row="1"
-               HeightRequest="60"
-               CornerRadius="30"
-               BackgroundColor="#095D7E"
-               BorderColor="#E0E0E0"
-               HasShadow="True"
-               Padding="10"
-               Margin="20,0,20,20">
+       HeightRequest="60"
+       CornerRadius="30"
+       BackgroundColor="#095D7E"
+       BorderColor="#E0E0E0"
+       HasShadow="True"
+       Padding="10"
+       Margin="20,0,20,20">
             <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30">
                 <!-- Home Icon -->
                 <Image Source="home_icon.png" WidthRequest="24" HeightRequest="24">
@@ -119,14 +120,14 @@
                 </Image>
 
                 <!-- Search Icon -->
-                <Image Source="onsearch_icon.png" WidthRequest="24" HeightRequest="24">
+                <Image Source="search_icon.png" WidthRequest="24" HeightRequest="24">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnSearchTapped" />
                     </Image.GestureRecognizers>
                 </Image>
 
                 <!-- Calendar Icon -->
-                <Image Source="calendar_icon.png" WidthRequest="24" HeightRequest="24">
+                <Image Source="oncalendar_icon.png" WidthRequest="24" HeightRequest="24">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnCalendarTapped" />
                     </Image.GestureRecognizers>

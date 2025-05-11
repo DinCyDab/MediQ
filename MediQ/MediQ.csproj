@@ -81,10 +81,10 @@
 	  <MauiXaml Update="MVC\View\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVC\View\NotificationsPage.xaml">
+	  <MauiXaml Update="MVC\View\Modals\SettingsModal.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVC\View\ProfilePage.xaml">
+	  <MauiXaml Update="MVC\View\NotificationsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVC\View\SearchView.xaml">

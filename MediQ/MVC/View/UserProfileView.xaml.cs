@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using MediQ.MVC.View.Modals;
 namespace MediQ.MVC.View
 {
     public partial class UserProfileView : ContentPage
@@ -15,26 +15,29 @@ namespace MediQ.MVC.View
         public UserProfileView()
         {
             InitializeComponent();
+            if (MainPage.user != null)
+            {
+                string fullName = $"{MainPage.user.first_name} {MainPage.user.last_name}";
+                UserNameLabel.Text = fullName;
+            }
+            else
+            {
+                UserNameLabel.Text = "Guest";
+            }
         }
 
         private async void OnSettingsClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Settings", "Settings clicked.", "OK");
+            await Navigation.PushModalAsync(new SettingsModal());
         }
 
         private async void OnHelpCenterClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Help Center", "Help Center clicked.", "OK");
-        }
+            string faq = "Frequently Asked Questions:\n\n" +
+                         "Q: How do I reset my password?\nA: Go to settings and choose 'Change Password'.\n\n" +
+                         "Q: How do I contact support?\nA: Use the 'Send Feedback' button.";
 
-        private async void OnSendFeedbackClicked(object sender, EventArgs e)
-        {
-            await DisplayAlert("Feedback", "Send us feedback clicked.", "OK");
-        }
-
-        private async void OnRateAppClicked(object sender, EventArgs e)
-        {
-            await DisplayAlert("Rate Us", "Rate our app clicked.", "OK");
+            await DisplayAlert("Help Center", faq, "OK");
         }
 
         private async void OnSignOutClicked(object sender, EventArgs e)
@@ -45,6 +48,30 @@ namespace MediQ.MVC.View
                 // Navigate to login page or root page
                 await Navigation.PopToRootAsync();
             }
+        }
+        // nav bad funcs
+        private async void OnHomeTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
+        }
+
+        private async void OnSearchTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchView());
+        }
+
+        private async void OnCalendarTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CalendarPage());
+        }
+
+        private async void OnProfileTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserProfileView());
+        }
+        private async void OnNotificationsTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NotificationsPage());
         }
     }
 }
