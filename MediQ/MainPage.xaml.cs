@@ -7,10 +7,14 @@ namespace MediQ
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        UserController uc = new();
+        public static User user = new User();
 
         public MainPage()
         {
             InitializeComponent();
+            MainPage.user.user_ID = -1;
+            MainPage.user = this.uc.loadUser("1234", "1231");
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -25,19 +29,37 @@ namespace MediQ
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
 
-        private async void goToSearchPage(object sender, EventArgs e)
+        private async void GoToSearchPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SearchView());
         }
-        private async void goToProfilePage(object sender, EventArgs e)
+
+        private async void GoToHomePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UserProfileView());
+            await Navigation.PushAsync(new HomePage());
         }
 
-        private async void goToBookingPage(object sender, EventArgs e)
+
+        private async void GoToCalendarPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BookingView());
+            await Navigation.PushAsync(new CalendarPage());
         }
+
+        private async void GoToBookingPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BookingPage());
+        }
+
+        private async void GoToProfilePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProfilePage());
+        }
+
+        private async void GoToNotificationsPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NotificationsPage());
+        }
+
     }
 
 }
