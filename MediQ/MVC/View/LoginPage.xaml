@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.LoginPage"
+             BackgroundColor="White"
+             Padding="30">
+
+    <VerticalStackLayout Spacing="20" VerticalOptions="Center">
+
+        <!-- Logo -->
+        <Image Source="logo.png" HeightRequest="120" HorizontalOptions="Center" />
+
+        <!-- Email -->
+        <Frame CornerRadius="25" Padding="10" BackgroundColor="#F5F5F5" HasShadow="False">
+            <Entry x:Name="emailEntry"
+                   Placeholder="Email"
+                   Keyboard="Email"
+                   BackgroundColor="Transparent"
+                   TextColor="Black" />
+        </Frame>
+
+        <!-- Password -->
+        <Frame CornerRadius="25" Padding="10" BackgroundColor="#F5F5F5" HasShadow="False">
+            <Entry x:Name="passwordEntry"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   BackgroundColor="Transparent"
+                   TextColor="Black" />
+        </Frame>
+
+        <!-- Log In Button -->
+        <Button Text="LOG IN"
+                x:Name="loginButton"
+                BackgroundColor="#004E5E"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="25"
+                HeightRequest="50" />
+
+        <!-- Sign Up Button -->
+        <Button Text="Sign Up"
+                x:Name="signupButton"
+                BackgroundColor="#D9F2EB"
+                TextColor="Black"
+                CornerRadius="25"
+                HeightRequest="50" />
+
+        <Button Text="Continue as Guest"
+        x:Name="guestButton"
+        FontSize="12"
+        BackgroundColor="Transparent"
+        TextColor="#004E5E"
+        HorizontalOptions="Center"
+        Clicked="OnGuestClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

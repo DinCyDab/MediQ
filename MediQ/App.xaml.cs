@@ -9,7 +9,8 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            //return new Window(new AppShell()); //original
+            return new Window(new NavigationPage(new MediQ.MVC.View.LoginPage())); //test
         }
     }
 }
