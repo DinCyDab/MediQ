@@ -21,12 +21,25 @@ namespace MediQ.MVC.View
             }
 
             InitializeComponent();
+
+            TodayDateLabel.Text = DateTime.Today.ToString("dddd, MMMM d, yyyy"); // e.g. Tuesday, May 13, 2025
+
             initializeAppointmentsToday();
             initializeAppointmentStatus();
         }
         private void initializeAppointmentsToday()
         {
             List<Appointment> list_of_app = this.ac.loadAppointmentsDefault(MainPage.user.user_ID);
+
+            if(list_of_app.Count == 0)
+            {
+                Border border = createBorder();
+                Label label = createLabel("No Appointments For Today");
+                label.HorizontalTextAlignment = TextAlignment.Center;
+                border.Content = label;
+                appointments_today.Children.Add(border);
+                return;
+            }
 
             foreach(Appointment app in list_of_app)
             {
@@ -41,6 +54,18 @@ namespace MediQ.MVC.View
         private void initializeAppointmentStatus()
         {
             List<Appointment> list_of_app = this.ac.loadAppointmentsStatus(MainPage.user.user_ID);
+
+            if (list_of_app.Count == 0)
+            {
+                Border border = createBorder();
+                Label label = createLabel("No Appointments");
+                label.HorizontalTextAlignment = TextAlignment.Center;
+                border.Content = label;
+                appointment_status.Children.Add(border);
+                return;
+            }
+
+            int i = 0;
 
             foreach(Appointment app in list_of_app)
             {
@@ -57,6 +82,13 @@ namespace MediQ.MVC.View
 
                 border.Content = v_layout;
                 appointment_status.Children.Add(border);
+
+                if(i > 2)
+                {
+                    break;
+                }
+
+                i++;
             }
         }
 
@@ -131,23 +163,6 @@ namespace MediQ.MVC.View
             };
             return label;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private Border createBorder()
         {
             Border border = new Border
