@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tldra\\source\\repos\\MediQ---Dale\\MediQ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|c:\\users\\tldra\\source\\repos\\mediq---dale\\mediq\\mvc\\view\\userprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|solutionrelative:mvc\\view\\userprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserProfileView.xaml",
+              "DocumentMoniker": "C:\\Users\\tldra\\source\\repos\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml",
+              "RelativeDocumentMoniker": "MVC\\View\\UserProfileView.xaml",
+              "ToolTip": "C:\\Users\\tldra\\source\\repos\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml",
+              "RelativeToolTip": "MVC\\View\\UserProfileView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-05T17:04:50.263Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

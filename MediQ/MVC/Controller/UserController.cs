@@ -49,5 +49,15 @@ namespace MediQ.MVC.Controller
             is_found = this.dc.findUser(sql);
             return is_found;
         }
+        public bool updateUser(int userID, string firstName, string lastName, string password)
+        {
+            string sql = $"UPDATE Users " +
+                         $"SET first_name = '{firstName}', last_name = '{lastName}', password = '{password}' " +
+                         $"WHERE user_ID = {userID}";
+
+            this.dc.insertData(sql);
+            return true;
+            // Assuming executeSQL returns true if successful
+        }
     }
 }
