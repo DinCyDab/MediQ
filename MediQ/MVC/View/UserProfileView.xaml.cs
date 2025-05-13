@@ -8,12 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MediQ.MVC.View.Modals;
+using Application = Microsoft.Maui.Controls.Application;
+using NavigationPage = Microsoft.Maui.Controls.NavigationPage;
+
 namespace MediQ.MVC.View
 {
     public partial class UserProfileView : ContentPage
     {
         public UserProfileView()
         {
+            if (MainPage.user.user_ID == -1)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
             InitializeComponent();
             if (MainPage.user != null)
             {
@@ -47,6 +56,9 @@ namespace MediQ.MVC.View
             {
                 // Navigate to login page or root page
                 await Navigation.PopToRootAsync();
+                MainPage.user = new();
+                MainPage.user.user_ID = -1;
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
             }
         }
         // nav bad funcs

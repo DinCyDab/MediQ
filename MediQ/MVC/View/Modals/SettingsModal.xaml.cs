@@ -13,36 +13,61 @@ namespace MediQ.MVC.View.Modals
             // Set initial values to the fields
             if (MainPage.user != null)
             {
-                NameEntry.Text = MainPage.user.first_name + " " + MainPage.user.last_name;
+                FirstName.Text = MainPage.user.first_name;
+                LastName.Text = MainPage.user.last_name;
             }
         }
 
         private async void OnSaveClicked(object sender, EventArgs e)
         {
             // Retrieve the updated values from the Entry fields
-            string newName = NameEntry.Text;
+            string firstName = FirstName.Text;
+            string lastName = LastName.Text;
             string newPassword = PasswordEntry.Text;
+            string currentPassword = (string)CurrentPassword.Text;
 
+            if (string.IsNullOrWhiteSpace(currentPassword))
+            {
+                await DisplayAlert("Error", "Please fill in the current password field.", "OK");
+                return;
+            }
+
+            string email = MainPage.user.email;
+            var user = this.uc.loadUser(email, PasswordHash.Hash(currentPassword));
+           
             // Validate that the name and password are not empty
-            if (string.IsNullOrWhiteSpace(newName) || string.IsNullOrWhiteSpace(newPassword))
+            if (string.IsNullOrWhiteSpace(firstName) ||
+                string.IsNullOrWhiteSpace(lastName) ||
+                string.IsNullOrWhiteSpace(currentPassword))
             {
                 await DisplayAlert("Error", "Please fill in all fields.", "OK");
                 return;
             }
 
-            // Split the name into first name and last name (you may want to refine this)
-            string[] nameParts = newName.Split(' ');
-            string newFirstName = nameParts[0];
-            string newLastName = nameParts.Length > 1 ? nameParts[1] : "";
+            if (user == null)
+            {
+                await DisplayAlert("Error", "Failed to update your information. Please try again.", "OK");
+                return;
+            }
 
-            // Update the user in the database using the UserController
-            bool isUpdated = this.uc.updateUser(MainPage.user.user_ID, newFirstName, newLastName, newPassword);
+            bool isUpdated = false;
+
+            if (!string.IsNullOrWhiteSpace(newPassword))
+            {
+                newPassword = PasswordHash.Hash(newPassword);
+                // Update the user in the database using the UserController
+                isUpdated = this.uc.updateUser(MainPage.user.user_ID, firstName, lastName, newPassword);
+            }
+            else
+            {
+                isUpdated = this.uc.updateUser(MainPage.user.user_ID, firstName, lastName);
+            }
 
             if (isUpdated)
             {
                 // Update the values in MainPage.user if the database update was successful
-                MainPage.user.first_name = newFirstName;
-                MainPage.user.last_name = newLastName;
+                MainPage.user.first_name = firstName;
+                MainPage.user.last_name = lastName;
                 MainPage.user.password = newPassword;
 
                 // Display a confirmation message

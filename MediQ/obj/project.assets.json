@@ -44817,11 +44817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MediQ.csproj",
+      "projectUniqueName": "D:\\C# Project\\MediQ---Dale\\MediQ\\MediQ.csproj",
       "projectName": "MediQ",
-      "projectPath": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MediQ.csproj",
+      "projectPath": "D:\\C# Project\\MediQ---Dale\\MediQ\\MediQ.csproj",
       "packagesPath": "C:\\Users\\Cy\\.nuget\\packages\\",
-      "outputPath": "D:\\C# Project\\MediQ-Shawn\\MediQ\\obj\\",
+      "outputPath": "D:\\C# Project\\MediQ---Dale\\MediQ\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

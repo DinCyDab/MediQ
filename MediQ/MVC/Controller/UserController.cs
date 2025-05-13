@@ -59,5 +59,16 @@ namespace MediQ.MVC.Controller
             return true;
             // Assuming executeSQL returns true if successful
         }
+
+        public bool updateUser(int userID, string firstName, string lastName)
+        {
+            string sql = $"UPDATE Users " +
+                         $"SET first_name = '{firstName}', last_name = '{lastName}'" +
+                         $"WHERE user_ID = {userID}";
+
+            this.dc.insertData(sql);
+            return true;
+            // Assuming executeSQL returns true if successful
+        }
     }
 }

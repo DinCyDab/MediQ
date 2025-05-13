@@ -50,6 +50,8 @@ public partial class LoginPage : ContentPage
                 await conn.OpenAsync();
 
                 string query = "SELECT COUNT(*) FROM Users WHERE Email = @Email AND Password = @Password";
+
+                password = PasswordHash.Hash(password);
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);

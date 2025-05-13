@@ -52,6 +52,8 @@ public partial class SignupPage : ContentPage
                 string insertQuery = @"INSERT INTO Users (email, password, first_name, last_name) 
                                        VALUES (@Email, @Password, @FirstName, @LastName)";
 
+                password = PasswordHash.Hash(password);
+
                 using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);

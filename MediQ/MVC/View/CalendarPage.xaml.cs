@@ -10,6 +10,12 @@ namespace MediQ.MVC.View
     {
         public CalendarPage()
         {
+            if (MainPage.user.user_ID == -1)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
             InitializeComponent();
         }
         private async void OnArrowTapped(object sender, EventArgs e)
@@ -34,7 +40,7 @@ namespace MediQ.MVC.View
 
         private async void OnProfileTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProfilePage());
+            await Navigation.PushAsync(new UserProfileView());
         }
         private async void OnNotificationsTapped(object sender, EventArgs e)
         {
