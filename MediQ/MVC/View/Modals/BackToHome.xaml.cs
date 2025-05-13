@@ -15,7 +15,7 @@ namespace MediQ.MVC.View.Modals
 
         public void goToMainPage(object sender, EventArgs e)
         {
-            Navigation.PopToRootAsync();
+            Navigation.PushAsync(new HomePage());
         }
     }
 }

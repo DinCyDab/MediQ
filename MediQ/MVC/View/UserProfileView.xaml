@@ -1,0 +1,153 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.UserProfileView"
+             BackgroundColor="#EAF9FC">
+
+    <ScrollView>
+        <Grid RowDefinitions="*, Auto" Padding="0">
+            <ScrollView Grid.Row="0"
+                        Padding="20">
+                <VerticalStackLayout>
+                    <!-- Header -->
+                    <Grid BackgroundColor="#026C8D" HeightRequest="60" VerticalOptions="Start">
+                        <Label Text="Profile"
+                                TextColor="White"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"/>
+                    </Grid>
+
+                    <!-- Profile Image and Name -->
+                    <VerticalStackLayout Padding="0,30,0,10" HorizontalOptions="Center">
+                        <Border WidthRequest="100"
+                            HeightRequest="100"
+                            Padding="0"
+                            BackgroundColor="#DCEEFF">
+                            <Image Source="user.png"
+                                WidthRequest="80" HeightRequest="80"
+                                HorizontalOptions="Center" VerticalOptions="Center"
+                                Aspect="AspectFit"/>
+                        </Border>
+                        <Label x:Name="UserNameLabel"
+                            FontAttributes="Bold"
+                            FontSize="22"
+                            TextColor="Black"
+                            HorizontalOptions="Center"
+                            Margin="0,10,0,0"/>
+                    </VerticalStackLayout>
+
+                    <!-- Action Buttons -->
+                    <VerticalStackLayout Padding="20,10" Spacing="10">
+                        <!-- Settings -->
+                        <Frame BackgroundColor="#D4F3F3"
+                               CornerRadius="10"
+                               Padding="10"
+                               HasShadow="False"
+                               HorizontalOptions="FillAndExpand">
+                            <HorizontalStackLayout>
+                                <Image Source="settings_icon.png"
+                       WidthRequest="20"
+                       HeightRequest="20"
+                       VerticalOptions="Center"/>
+                                <Label Text="Settings"
+                       TextColor="Black"
+                       FontSize="16"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0"/>
+                            </HorizontalStackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnSettingsClicked" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                        <!-- Help Center -->
+                        <Frame BackgroundColor="#D4F3F3"
+                               CornerRadius="10"
+                               Padding="10"
+                               HasShadow="False"
+                               HorizontalOptions="FillAndExpand">
+                            <HorizontalStackLayout>
+                                <Image Source="faq.png"
+                       WidthRequest="20"
+                       HeightRequest="20"
+                       VerticalOptions="Center"/>
+                                <Label Text="Help Center"
+                       TextColor="Black"
+                       FontSize="16"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0"/>
+                            </HorizontalStackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnHelpCenterClicked" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                        <!-- Sign Out -->
+                        <Frame BackgroundColor="#D4F3F3"
+                               CornerRadius="10"
+                               Padding="10"
+                               HasShadow="False"
+                               HorizontalOptions="FillAndExpand">
+                            <HorizontalStackLayout>
+                                <Image Source="signout.png"
+                       WidthRequest="20"
+                       HeightRequest="20"
+                       VerticalOptions="Center"/>
+                                <Label Text="Sign Out"
+                       TextColor="Black"
+                       FontSize="16"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0"/>
+                            </HorizontalStackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnSignOutClicked" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </ScrollView>
+
+            <!-- Floating Navigation Bar -->
+            <Frame Grid.Row="1"
+                    HeightRequest="60"
+                    CornerRadius="30"
+                    BackgroundColor="#095D7E"
+                    BorderColor="#E0E0E0"
+                    HasShadow="True"
+                    Padding="10"
+                    Margin="20,0,20,20">
+                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30">
+                    <!-- Home Icon -->
+                    <Image Source="home_icon.png" WidthRequest="24" HeightRequest="24">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnHomeTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <!-- Search Icon -->
+                    <Image Source="search_icon.png" WidthRequest="24" HeightRequest="24">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSearchTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <!-- Calendar Icon -->
+                    <Image Source="calendar_icon.png" WidthRequest="24" HeightRequest="24">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCalendarTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <!-- Profile Icon -->
+                    <Image Source="onprofile_icon.png" WidthRequest="24" HeightRequest="24">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProfileTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </HorizontalStackLayout>
+            </Frame>
+        </Grid>
+
+    </ScrollView>
+</ContentPage>

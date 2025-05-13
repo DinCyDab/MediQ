@@ -22,7 +22,14 @@ namespace MediQ.MVC.View
         }
         public BookingView(int doctor_ID)
         {
+            if (MainPage.user.user_ID == -1)
+            {
+                Navigation.PopToRootAsync();
+                Navigation.PushAsync(new LoginPage());
+                return;
+            }
             InitializeComponent();
+
             loadDoctorName(doctor_ID);
             createSchedule(doctor_ID);
         }
@@ -31,6 +38,7 @@ namespace MediQ.MVC.View
         {
             if(selected_schedule_ID == -1)
             {
+                DisplayAlert("Wait", "Please select one of the schedule", "OK");
                 return;
             }
 

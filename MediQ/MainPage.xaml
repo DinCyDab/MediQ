@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MediQ.MainPage">
+             x:Class="MediQ.MainPage"
+             Title="Main Page">
 
     <ScrollView>
         <VerticalStackLayout
@@ -23,25 +24,35 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
+            <!--
             <Button
                 x:Name="CounterBtn"
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
-
+            -->
             <Button
                 x:Name="SearchButton"
                 Text="Search"
                 Clicked="goToSearchPage"/>
-            
-            <Button
+
+            <!--<Button
                 Text="Booking"
-                Clicked="goToBookingPage"/>
+                Clicked="goToBookingPage"/>-->
 
             <Label
                 x:Name="user_output"/>
+
+            <Button x:Name="backToLoginButton"
+                    Text="Back to Login"
+                    FontSize="12"
+                    BackgroundColor="Transparent"
+                    TextColor="LightGray"
+                    HorizontalOptions="Center"
+                    Clicked="OnBackToLoginClicked"
+                    IsVisible="False" />
+
         </VerticalStackLayout>
     </ScrollView>
 

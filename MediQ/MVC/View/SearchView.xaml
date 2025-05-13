@@ -3,46 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MediQ.MVC.View.SearchView">
 
-    <ScrollView>
-        <VerticalStackLayout BackgroundColor="#F1F9FF">
-            <Frame BackgroundColor="#095D7E"
+    <Grid RowDefinitions="*, Auto" Padding="0" BackgroundColor="AliceBlue">
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout BackgroundColor="#F1F9FF">
+                <Frame BackgroundColor="#095D7E"
                    CornerRadius="0"
                    BorderColor="#095D7E">
-                <Grid ColumnDefinitions="*, 30"
+                    <Grid ColumnDefinitions="*, 30"
                       VerticalOptions="Center">
-                    <Entry x:Name="search_box"
+                        <Entry x:Name="search_box"
                            TextColor="Black"
                            BackgroundColor="White"
                            Grid.Column="0"
                            Placeholder="Search..."
                            FontSize="12"
                            TextChanged="searchForDoctor"/>
-                    <Border WidthRequest="30"
+                        <Border WidthRequest="30"
                         HeightRequest="20"
                         Stroke="Transparent"
                         Grid.Column="1"
                         VerticalOptions="Center"
                         HorizontalOptions="End">
-                        <Image Source="search.png"
+                            <Image Source="search.png"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"
                                Aspect="AspectFit"/>
-                    </Border>
-                </Grid>
-            </Frame>
-            <!--<ContentView SemanticProperties.Description="Category"
+                        </Border>
+                    </Grid>
+                </Frame>
+                <!--<ContentView SemanticProperties.Description="Category"
                 BackgroundColor="AliceBlue"
                 Padding="10">
 
             </ContentView>-->
-            <BoxView BackgroundColor="#095D7E"
+                <BoxView BackgroundColor="#095D7E"
                      HeightRequest="5"/>
-            <VerticalStackLayout x:Name="stack_layout">
-                <Label Text="Try searching for a doctor. The list will appear here."
+                <VerticalStackLayout x:Name="stack_layout">
+                    <Label Text="Try searching for a doctor. The list will appear here."
                        HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
                        TextColor="Black"
                        Margin="20"/>
-                <Frame CornerRadius="10"
+                    <!--<Frame CornerRadius="10"
                    Margin="10"
                    BackgroundColor="#CCECEE"
                    BorderColor="Transparent">
@@ -94,10 +96,50 @@
                             </Border>
                         </HorizontalStackLayout>
                     </Grid>
-                </Frame>
+                </Frame>-->
 
+                </VerticalStackLayout>
             </VerticalStackLayout>
-        </VerticalStackLayout>
-    </ScrollView>
+        </ScrollView>
+
+        <Frame Grid.Row="1"
+               HeightRequest="60"
+               CornerRadius="30"
+               BackgroundColor="#095D7E"
+               BorderColor="#E0E0E0"
+               HasShadow="True"
+               Padding="10"
+               Margin="20,0,20,20">
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30">
+                <!-- Home Icon -->
+                <Image Source="home_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnHomeTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Search Icon -->
+                <Image Source="onsearch_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSearchTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Calendar Icon -->
+                <Image Source="calendar_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCalendarTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Profile Icon -->
+                <Image Source="profile_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnProfileTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </HorizontalStackLayout>
+        </Frame>
+    </Grid>
 
 </ContentPage>

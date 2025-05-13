@@ -63,35 +63,38 @@
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-<<<<<<< Updated upstream
-	  <MauiXaml Update="MVC\View\BookingView.xaml">
-=======
 	  <Compile Update="MVC\View\NotificationsPage.xaml.cs">
 	    <DependentUpon>NotificationsPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MVC\View\AppointmentStatusPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="MVC\View\BookingPage.xaml">
->>>>>>> Stashed changes
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVC\View\DoctorProfile.xaml">
+	  <MauiXaml Update="MVC\View\CalendarPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVC\View\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVC\View\Modals\AppointmentConfirmation.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVC\View\Modals\BackToHome.xaml">
+	  <MauiXaml Update="MVC\View\NotificationsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVC\View\ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVC\View\SearchView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVC\View\SignupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -3,13 +3,11 @@
     x:Class="MediQ.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MediQ"
-    Shell.FlyoutBehavior="Flyout"
-    Title="MediQ">
+    xmlns:view="clr-namespace:MediQ"
+    Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate view:MainPage}"
         Route="MainPage" />
-
 </Shell>

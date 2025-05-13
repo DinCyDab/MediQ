@@ -182,17 +182,23 @@ namespace MediQ.MVC.Controller
             while (reader.Read())
             {
                 History history = new History();
-                history.user_ID = (int)reader["user_ID"];
-                history.doctor_ID = (int)reader["doctor_ID"];
+                Doctors doctor = new Doctors();
+                Category category = new Category();
 
-                DateTime load_date;
-                DateTime.TryParse((string)reader["view_date"], out load_date);
+                history.history_ID = (int)reader["history_ID"];
 
-                TimeSpan load_time;
-                TimeSpan.TryParse((string)reader["view_time"], out load_time);
+                category.category_ID = (int)reader["category_ID"];
+                category.category_name = (string)reader["category_name"];
 
-                history.view_date = load_date;
-                history.view_time = load_time;
+                doctor.category = category;
+                doctor.doctor_ID = (int)reader["doctor_ID"];
+                doctor.first_name = (string)reader["first_name"];
+                doctor.last_name = (string)reader["last_name"];
+                doctor.location = (string)reader["location"];
+                doctor.status = (string)reader["status"];
+                doctor.image_link = (string)reader["doctor_image"];
+
+                history.doctor = doctor;
 
                 list_of_history.Add(history);
             }

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.NotificationsPage"
+             NavigationPage.HasNavigationBar="False">
+
+	<ScrollView>
+		<VerticalStackLayout BackgroundColor="White"
+                             Padding="0">
+			
+			<Frame BackgroundColor="#095D7E"
+                   Padding="0"
+                   HasShadow="False"
+                   BorderColor="Transparent">
+				<Grid Padding="10, 10, 10, 10" ColumnDefinitions="Auto, *, Auto">
+					<Button x:Name="backButton"
+                            BackgroundColor="Transparent"
+                            BorderColor="Transparent"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Clicked="OnBackButtonClicked">
+						<Button.ImageSource>
+							<FileImageSource File="arrow_left.png" />
+						</Button.ImageSource>
+						<Button.WidthRequest>30</Button.WidthRequest>
+						<Button.HeightRequest>30</Button.HeightRequest>
+					</Button>
+
+					<Label Text="Notifications"
+                           FontSize="20"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Grid.Column="1" />
+
+					<Label Text="" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="2" />
+				</Grid>
+			</Frame>
+			
+			<BoxView BackgroundColor="#095D7E"
+                     HeightRequest="5" />
+
+			<!-- Notification 1 -->
+			<Frame CornerRadius="10"
+                   Margin="10,4"
+                   BackgroundColor="#B0D4E3"
+                   BorderColor="Transparent"
+                   HasShadow="True">
+				<VerticalStackLayout Spacing="3">
+					<Label Text="Appointment Reminder"
+                           FontSize="11"
+                           FontAttributes="Bold"
+                           TextColor="#095D7E" />
+					<Label Text="You have an appointment with Dr. Smith at 3:00 PM today."
+                           FontSize="7"
+                           TextColor="Black" />
+				</VerticalStackLayout>
+			</Frame>
+
+			<!-- Notification 2 -->
+			<Frame CornerRadius="10"
+                   Margin="10,4"
+                   BackgroundColor="#B0D4E3"
+                   BorderColor="Transparent"
+                   HasShadow="True">
+				<VerticalStackLayout Spacing="3">
+					<Label Text="New Health Tips Available"
+                           FontSize="11"
+                           FontAttributes="Bold"
+                           TextColor="#095D7E" />
+					<Label Text="Check out the latest tips on how to stay healthy this summer."
+                           FontSize="7"
+                           TextColor="Black" />
+				</VerticalStackLayout>
+			</Frame>
+
+			<!-- Notification 3 -->
+			<Frame CornerRadius="10"
+                   Margin="10,4"
+                   BackgroundColor="#B0D4E3"
+                   BorderColor="Transparent"
+                   HasShadow="True">
+				<VerticalStackLayout Spacing="3">
+					<Label Text="Profile Updated"
+                           FontSize="11"
+                           FontAttributes="Bold"
+                           TextColor="#095D7E" />
+					<Label Text="Your profile information has been successfully updated."
+                           FontSize="7"
+                           TextColor="Black" />
+				</VerticalStackLayout>
+			</Frame>
+
+		</VerticalStackLayout>
+	</ScrollView>
+</ContentPage>

@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.Modals.SettingsModal"
+             BackgroundColor="White"
+             Title="Edit Profile">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Update First Name" FontAttributes="Bold" />
+        <Entry x:Name="FirstName" Placeholder="First Name" TextColor="Black" />
+
+        <Label Text="Update Last Name" FontAttributes="Bold" />
+        <Entry x:Name="LastName" Placeholder="Last Name" TextColor="Black" />
+
+        <Label Text="Update Password" FontAttributes="Bold" />
+        <Entry x:Name="PasswordEntry" Placeholder="Enter new password" IsPassword="True" TextColor="Black"/>
+
+        <Label Text="Current Password" FontAttributes="Bold" />
+        <Entry x:Name="CurrentPassword" Placeholder="Enter current password" IsPassword="True" TextColor="Black"/>
+
+        <Button Text="Save Changes" Clicked="OnSaveClicked" />
+        <Button Text="Cancel" Clicked="OnCancelClicked" BackgroundColor="LightGray"/>
+
+    </VerticalStackLayout>
+</ContentPage>
