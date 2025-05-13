@@ -38,6 +38,7 @@ namespace MediQ.MVC.View
         {
             if(selected_schedule_ID == -1)
             {
+                DisplayAlert("Wait", "Please select one of the schedule", "OK");
                 return;
             }
 

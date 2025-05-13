@@ -31,7 +31,7 @@ namespace MediQ.MVC.Controller
             List<Schedule> list_of_schedule = new List<Schedule>();
 
             string sql = $"SELECT * FROM Schedule " +
-                         $"WHERE schedule_date = '{date}' AND doctor_ID = {doctor_ID} " +
+                         $"WHERE schedule_date = '{date}' AND doctor_ID = {doctor_ID} AND schedule_status = 'Available'" +
                          $"ORDER BY schedule_time ASC";
 
             list_of_schedule = this.dc.loadSchedule(sql);
