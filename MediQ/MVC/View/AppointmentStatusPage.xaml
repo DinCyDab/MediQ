@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.AppointmentStatusPage"
+             BackgroundColor="White">
+
+	<VerticalStackLayout Spacing="0">
+
+		<Grid BackgroundColor="#005F79" Padding="20,20,20,20">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+
+			<Image Source="arrow_left.png"
+                   WidthRequest="24"
+                   HeightRequest="24"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start">
+				<Image.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnBackTapped" />
+				</Image.GestureRecognizers>
+			</Image>
+
+			<Label Grid.Column="1"
+                   Text="Appointment Status"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+		</Grid>
+
+		<ScrollView Padding="20">
+			<VerticalStackLayout Spacing="10">
+
+				<!-- Approved Appointment -->
+				<Frame BackgroundColor="#2AA97D" CornerRadius="12" Padding="15">
+					<VerticalStackLayout>
+						<Label Text="Dr. Muniz" TextColor="White" FontSize="16" FontAttributes="Bold" />
+						<HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+							<Image Source="clock_icon.png" WidthRequest="16" HeightRequest="16" />
+							<Label Text="12.00 - 16.00" FontSize="14" TextColor="White" />
+							<Label Text="Approved" FontSize="14" TextColor="White"
+                                   HorizontalOptions="EndAndExpand" />
+						</HorizontalStackLayout>
+					</VerticalStackLayout>
+				</Frame>
+
+				<!-- Pending Appointment -->
+				<Frame BackgroundColor="#F4A950" CornerRadius="12" Padding="15">
+					<VerticalStackLayout>
+						<Label Text="Dr. Uy" TextColor="White" FontSize="16" FontAttributes="Bold" />
+						<HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+							<Image Source="clock_icon.png" WidthRequest="16" HeightRequest="16" />
+							<Label Text="10.00 - 12.00" FontSize="14" TextColor="White" />
+							<Label Text="Pending" FontSize="14" TextColor="White"
+                                   HorizontalOptions="EndAndExpand" />
+						</HorizontalStackLayout>
+					</VerticalStackLayout>
+				</Frame>
+
+				<!-- Rejected Appointment -->
+				<Frame BackgroundColor="#E05C5C" CornerRadius="12" Padding="15">
+					<VerticalStackLayout>
+						<Label Text="Dr. Santos" TextColor="White" FontSize="16" FontAttributes="Bold" />
+						<HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+							<Image Source="clock_icon.png" WidthRequest="16" HeightRequest="16" />
+							<Label Text="15.00 - 16.30" FontSize="14" TextColor="White" />
+							<Label Text="Rejected" FontSize="14" TextColor="White"
+                                   HorizontalOptions="EndAndExpand" />
+						</HorizontalStackLayout>
+					</VerticalStackLayout>
+				</Frame>
+
+			</VerticalStackLayout>
+		</ScrollView>
+
+	</VerticalStackLayout>
+</ContentPage>

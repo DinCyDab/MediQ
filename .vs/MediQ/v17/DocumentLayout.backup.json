@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C# Project\\MediQ\\",
+  "WorkspaceRootPath": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\searchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\searchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -17,6 +18,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\doctorprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\doctorprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+=======
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|c:\\users\\meizi\\documents\\github\\mediq\\mediq\\mvc\\view\\appointmentstatuspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\appointmentstatuspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|c:\\users\\meizi\\documents\\github\\mediq\\mediq\\mvc\\view\\calendarpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\calendarpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|c:\\users\\meizi\\documents\\github\\mediq\\mediq\\mvc\\view\\bookingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\bookingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|c:\\users\\meizi\\documents\\github\\mediq\\mediq\\mvc\\view\\appointmentstatuspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\appointmentstatuspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|c:\\users\\meizi\\documents\\github\\mediq\\mediq\\mvc\\view\\calendarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\calendarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|c:\\users\\meizi\\documents\\github\\mediq\\mediq\\mvc\\view\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|c:\\users\\meizi\\documents\\github\\mediq\\mediq\\mvc\\view\\appointmentstatuspage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\appointmentstatuspage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +60,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "SearchView.xaml",
               "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\SearchView.xaml",
               "RelativeDocumentMoniker": "MediQ\\MVC\\View\\SearchView.xaml",
@@ -52,11 +82,22 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-05T12:44:22.51Z",
+=======
+              "Title": "AppointmentStatusPage.xaml",
+              "DocumentMoniker": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "ToolTip": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "RelativeToolTip": "MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T06:11:32.062Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< Updated upstream
               "Title": "BookingView.xaml.cs",
               "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\BookingView.xaml.cs",
               "RelativeDocumentMoniker": "MediQ\\MVC\\View\\BookingView.xaml.cs",
@@ -65,10 +106,21 @@
               "ViewState": "AgIAAGQAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T12:44:10.37Z",
+=======
+              "Title": "BookingPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\BookingPage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\BookingPage.xaml.cs",
+              "ToolTip": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\BookingPage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\BookingPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T06:07:21.971Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "SearchView.xaml.cs",
               "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\SearchView.xaml.cs",
@@ -78,6 +130,69 @@
               "ViewState": "AgIAAG0AAAAAAAAAAAAawIAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T12:39:46.13Z",
+=======
+              "DocumentIndex": 3,
+              "Title": "AppointmentStatusPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "ToolTip": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:21:18.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:19:18.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalendarPage.xaml",
+              "DocumentMoniker": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\CalendarPage.xaml",
+              "ToolTip": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml",
+              "RelativeToolTip": "MediQ\\MVC\\View\\CalendarPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T13:56:37.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppointmentStatusPage.xaml",
+              "DocumentMoniker": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "ToolTip": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "RelativeToolTip": "MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T01:22:26.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalendarPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "ToolTip": "C:\\Users\\meizi\\Documents\\GitHub\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:18:43.134Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             }
           ]

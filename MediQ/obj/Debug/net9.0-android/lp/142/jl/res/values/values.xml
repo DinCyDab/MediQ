@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< Updated upstream
     <attr format="color" name="animationBackgroundColor"/>
     <attr format="enum" name="finishPrimaryWithPlaceholder">
         
@@ -103,4 +104,6 @@
         <attr name="tag"/>
         <attr name="animationBackgroundColor"/>
     </declare-styleable>
+=======
+>>>>>>> Stashed changes
 </resources>

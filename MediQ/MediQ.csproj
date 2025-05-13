@@ -66,7 +66,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+<<<<<<< Updated upstream
 	  <MauiXaml Update="MVC\View\BookingView.xaml">
+=======
+	  <Compile Update="MVC\View\NotificationsPage.xaml.cs">
+	    <DependentUpon>NotificationsPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MVC\View\AppointmentStatusPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVC\View\BookingPage.xaml">
+>>>>>>> Stashed changes
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVC\View\DoctorProfile.xaml">

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediQ.MVC.View.CalendarPage"
+             BackgroundColor="White">
+
+    <Grid RowDefinitions="*, Auto">
+        <ScrollView Grid.Row="0" Padding="20">
+            <VerticalStackLayout Spacing="20">
+
+                <Label Text="Today's Agenda"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="Black" />
+
+                <!-- Weekdays -->
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Mon\n18" FontSize="14" HorizontalTextAlignment="Center" />
+                    <Label Text="Tue\n19" FontSize="14" HorizontalTextAlignment="Center" />
+                    <Label Text="Wed\n20" FontSize="14" HorizontalTextAlignment="Center" />
+                    <Border BackgroundColor="#B7E1E6" StrokeThickness="0" StrokeShape="RoundRectangle 10">
+                        <Label Text="Thu\n21" FontSize="14" HorizontalTextAlignment="Center" Padding="8" />
+                    </Border>
+                    <Label Text="Fri\n22" FontSize="14" HorizontalTextAlignment="Center" />
+                </HorizontalStackLayout>
+
+                <!-- Appointments -->
+                <Label Text="Appointments Today"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="Black" />
+
+                <Border BackgroundColor="#005F79" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="15">
+                    <Label Text="08:00 - Dr. Veloso" TextColor="White" FontSize="14" />
+                </Border>
+
+                <Border BackgroundColor="#005F79" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="15">
+                    <Label Text="14:00 - Dr. Marquez" TextColor="White" FontSize="14" />
+                </Border>
+
+                <!-- Appointment Status with View All -->
+                <VerticalStackLayout Spacing="10">
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Appointment Status"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="Black" />
+
+                        <Label Text="View all →"
+                               FontSize="14"
+                               TextColor="Gray"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnViewAllTapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                    <!-- Preview Appointment Statuses -->
+                    <Border BackgroundColor="#2AA97D" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="15">
+                        <VerticalStackLayout>
+                            <Label Text="Dr. Muniz" TextColor="White" FontSize="14" />
+                            <HorizontalStackLayout>
+                                <Image Source="clock_icon.png" WidthRequest="16" HeightRequest="16" />
+                                <Label Text="12:00 - 16:00" FontSize="12" TextColor="White" />
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border BackgroundColor="#FFA726" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="15">
+                        <VerticalStackLayout>
+                            <Label Text="Dr. Uy" TextColor="White" FontSize="14" />
+                            <HorizontalStackLayout>
+                                <Image Source="clock_icon.png" WidthRequest="16" HeightRequest="16" />
+                                <Label Text="14:00 - 18:00" FontSize="12" TextColor="White" />
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <Frame Grid.Row="1"
+               HeightRequest="60"
+               CornerRadius="30"
+               BackgroundColor="#095D7E"
+               Margin="20"
+               HasShadow="True"
+               Padding="10">
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30">
+
+                <Image Source="home_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnHomeTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="search_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSearchTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="oncalendar_icon.png" WidthRequest="24" HeightRequest="24" />
+
+                <Image Source="profile_icon.png" WidthRequest="24" HeightRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnProfileTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </HorizontalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
