@@ -22,7 +22,14 @@ namespace MediQ.MVC.View
         }
         public BookingView(int doctor_ID)
         {
+            if (MainPage.user.user_ID == -1)
+            {
+                Navigation.PopToRootAsync();
+                Navigation.PushAsync(new LoginPage());
+                return;
+            }
             InitializeComponent();
+
             loadDoctorName(doctor_ID);
             createSchedule(doctor_ID);
         }

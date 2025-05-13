@@ -46,12 +46,12 @@
                 HeightRequest="50" />
 
         <Button Text="Continue as Guest"
-        x:Name="guestButton"
-        FontSize="12"
-        BackgroundColor="Transparent"
-        TextColor="#004E5E"
-        HorizontalOptions="Center"
-        Clicked="OnGuestClicked" />
+                x:Name="guestButton"
+                FontSize="12"
+                BackgroundColor="Transparent"
+                TextColor="#004E5E"
+                HorizontalOptions="Center"
+                Clicked="OnGuestClicked" />
 
     </VerticalStackLayout>
 </ContentPage>

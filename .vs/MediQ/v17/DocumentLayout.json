@@ -1,12 +1,156 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C# Project\\MediQ\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\C# Project\\MediQ-Shawn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\mvc\\view\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\mvc\\view\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq-shawn\\mediq\\mvc\\view\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\HomePage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwDIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T03:39:49.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\AppShell.xaml",
+              "RelativeDocumentMoniker": "MediQ\\AppShell.xaml",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\AppShell.xaml",
+              "RelativeToolTip": "MediQ\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T03:35:30.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\App.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\App.xaml.cs",
+              "RelativeToolTip": "MediQ\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T03:30:24.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MainPage.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MainPage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MainPage.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T03:27:53.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MediQ\\MainPage.xaml",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MainPage.xaml",
+              "RelativeToolTip": "MediQ\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T03:40:49.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MVC\\View\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\LoginPage.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MVC\\View\\LoginPage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T03:27:32.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\AppShell.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\AppShell.xaml.cs",
+              "RelativeToolTip": "MediQ\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T03:35:34.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MVC\\View\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\LoginPage.xaml",
+              "ToolTip": "D:\\C# Project\\MediQ-Shawn\\MediQ\\MVC\\View\\LoginPage.xaml",
+              "RelativeToolTip": "MediQ\\MVC\\View\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T03:27:18.323Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

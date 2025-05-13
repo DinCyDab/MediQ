@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3d2757aaed00b4072c71e7de9a058cac5df10dea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f58ed9d2c327735cc17200f294b82f879a789738")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

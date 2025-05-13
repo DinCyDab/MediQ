@@ -13,6 +13,12 @@ namespace MediQ.MVC.View
         SearchController search_c = new SearchController();
         public HomePage()
         {
+            if(MainPage.user.user_ID == -1)
+            {
+                Navigation.PushAsync(new LoginPage());
+                return;
+            }
+
             InitializeComponent();
             initializeUser();
             loadHistory();

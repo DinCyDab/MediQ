@@ -21,7 +21,10 @@ namespace MediQ.MVC.View
         {
             InitializeComponent();
             this.doctor = doctor;
-            addToHistory();
+            if(MainPage.user.user_ID != -1)
+            {
+                addToHistory();
+            }
             initializePage();
         }
 
