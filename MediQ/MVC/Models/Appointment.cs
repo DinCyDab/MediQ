@@ -10,7 +10,7 @@ namespace MediQ.MVC.Models
     {
         public int appointment_ID { get; set; }
         public int user_ID { get; set; }
-        public int doctor_ID { get;set; }
+        public Doctors doctor { get;set; }
         public DateTime date { get; set; }
         public TimeSpan time { get; set; }
         public string status { get; set; }

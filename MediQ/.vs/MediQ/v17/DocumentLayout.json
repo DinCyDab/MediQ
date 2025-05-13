@@ -1,9 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tldra\\source\\repos\\MediQ---Dale\\MediQ\\",
+  "WorkspaceRootPath": "D:\\C# Project\\MediQ\\MediQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|c:\\users\\tldra\\source\\repos\\mediq---dale\\mediq\\mvc\\view\\userprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\appointmentstatuspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|solutionrelative:mvc\\view\\appointmentstatuspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\appointmentstatuspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|solutionrelative:mvc\\view\\appointmentstatuspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\calendarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|solutionrelative:mvc\\view\\calendarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\userprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{ED6592EC-B59D-7529-217D-2DDE8E82A728}|MediQ.csproj|solutionrelative:mvc\\view\\userprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -19,12 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppointmentStatusPage.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "RelativeDocumentMoniker": "MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "RelativeToolTip": "MVC\\View\\AppointmentStatusPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:52:24.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentStatusPage.xaml",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "RelativeDocumentMoniker": "MVC\\View\\AppointmentStatusPage.xaml",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\AppointmentStatusPage.xaml",
+              "RelativeToolTip": "MVC\\View\\AppointmentStatusPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T11:52:22.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalendarPage.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "RelativeDocumentMoniker": "MVC\\View\\CalendarPage.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "RelativeToolTip": "MVC\\View\\CalendarPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:52:18.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UserProfileView.xaml",
-              "DocumentMoniker": "C:\\Users\\tldra\\source\\repos\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\UserProfileView.xaml",
               "RelativeDocumentMoniker": "MVC\\View\\UserProfileView.xaml",
-              "ToolTip": "C:\\Users\\tldra\\source\\repos\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\UserProfileView.xaml",
               "RelativeToolTip": "MVC\\View\\UserProfileView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-05T17:04:50.263Z",
               "EditorCaption": ""

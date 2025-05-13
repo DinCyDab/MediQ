@@ -1,34 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C# Project\\MediQ---Dale\\",
+  "WorkspaceRootPath": "D:\\C# Project\\MediQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq---dale\\mediq\\mvc\\view\\userprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\userprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\calendarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\calendarpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq---dale\\mediq\\mvc\\view\\userprofileview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\userprofileview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\controller\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\controller\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq---dale\\mediq\\mvc\\view\\bookingview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\bookingview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq---dale\\mediq\\mvc\\view\\bookingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\bookingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq---dale\\mediq\\mvc\\controller\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\controller\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq---dale\\mediq\\mvc\\view\\modals\\settingsmodal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\modals\\settingsmodal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq---dale\\mediq\\mvc\\view\\modals\\settingsmodal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\modals\\settingsmodal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|d:\\c# project\\mediq\\mediq\\mvc\\view\\calendarpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DCC26C46-9833-4DC9-9A20-479DD7667C25}|MediQ\\MediQ.csproj|solutionrelative:mediq\\mvc\\view\\calendarpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserProfileView.xaml",
-              "DocumentMoniker": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\UserProfileView.xaml",
-              "ToolTip": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml",
-              "RelativeToolTip": "MediQ\\MVC\\View\\UserProfileView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CalendarPage.xaml",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\CalendarPage.xaml",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml",
+              "RelativeToolTip": "MediQ\\MVC\\View\\CalendarPage.xaml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAewDsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-13T09:16:11.137Z",
+              "WhenOpened": "2025-05-13T11:46:26.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalendarPage.xaml.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "RelativeToolTip": "MediQ\\MVC\\View\\CalendarPage.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowC4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:45:31.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserProfileView.xaml.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml.cs",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\UserProfileView.xaml.cs",
-              "ToolTip": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\UserProfileView.xaml.cs",
-              "RelativeToolTip": "MediQ\\MVC\\View\\UserProfileView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "MediQ\\MVC\\Controller\\AppointmentController.cs",
+              "ToolTip": "D:\\C# Project\\MediQ\\MediQ\\MVC\\Controller\\AppointmentController.cs",
+              "RelativeToolTip": "MediQ\\MVC\\Controller\\AppointmentController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T09:16:09.969Z",
+              "WhenOpened": "2025-05-13T12:11:03.028Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingView.xaml.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\BookingView.xaml.cs",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\BookingView.xaml.cs",
-              "ToolTip": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\BookingView.xaml.cs",
-              "RelativeToolTip": "MediQ\\MVC\\View\\BookingView.xaml.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAgwCUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T09:06:50.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookingView.xaml",
-              "DocumentMoniker": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\BookingView.xaml",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\BookingView.xaml",
-              "ToolTip": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\BookingView.xaml",
-              "RelativeToolTip": "MediQ\\MVC\\View\\BookingView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-13T09:06:46.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ScheduleController.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\Controller\\ScheduleController.cs",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\Controller\\ScheduleController.cs",
-              "ToolTip": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\Controller\\ScheduleController.cs",
-              "RelativeToolTip": "MediQ\\MVC\\Controller\\ScheduleController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T09:02:13.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SettingsModal.xaml.cs",
-              "DocumentMoniker": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\Modals\\SettingsModal.xaml.cs",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\Modals\\SettingsModal.xaml.cs",
-              "ToolTip": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\Modals\\SettingsModal.xaml.cs",
-              "RelativeToolTip": "MediQ\\MVC\\View\\Modals\\SettingsModal.xaml.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAuwFMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T06:01:49.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SettingsModal.xaml",
-              "DocumentMoniker": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\Modals\\SettingsModal.xaml",
-              "RelativeDocumentMoniker": "MediQ\\MVC\\View\\Modals\\SettingsModal.xaml",
-              "ToolTip": "D:\\C# Project\\MediQ---Dale\\MediQ\\MVC\\View\\Modals\\SettingsModal.xaml",
-              "RelativeToolTip": "MediQ\\MVC\\View\\Modals\\SettingsModal.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-13T06:01:35.158Z"
             }
           ]
         }

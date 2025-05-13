@@ -85,21 +85,21 @@ namespace MediQ.MVC.Controller
             while (reader.Read())
             {
                 Appointment appointment = new Appointment();
+                Doctors doctor = new();
                 appointment.appointment_ID = (int)reader["appointment_ID"];
                 appointment.user_ID = (int)reader["user_ID"];
-                appointment.doctor_ID = (int)reader["doctor_ID"];
-                string date = (string)reader["appointment_date"];
-                string time = (string)reader["appointment_time"];
                 appointment.status = (string)reader["appointment_status"];
+                appointment.date = (DateTime)reader["appointment_date"];
+                appointment.time = (TimeSpan)reader["appointment_time"];
 
-                DateTime load_date;
-                DateTime.TryParse(date, out load_date);
+                doctor.doctor_ID = (int)reader["doctor_ID"];
+                doctor.first_name = (string)reader["first_name"];
+                doctor.last_name = (string)reader["last_name"];
+                doctor.location = (string)reader["location"];
+                doctor.status = (string)reader["status"];
+                doctor.image_link = (string)reader["doctor_image"];
 
-                TimeSpan load_time;
-                TimeSpan.TryParse(time, out load_time);
-
-                appointment.date = load_date;
-                appointment.time = load_time;
+                appointment.doctor = doctor;
 
                 list_of_appointments.Add(appointment);
             }
