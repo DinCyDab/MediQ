@@ -13,16 +13,19 @@
                        FontAttributes="Bold"
                        TextColor="Black" />
 
-                <!-- Weekdays -->
-                <HorizontalStackLayout Spacing="10">
-                    <Label Text="Mon\n18" FontSize="14" HorizontalTextAlignment="Center" />
-                    <Label Text="Tue\n19" FontSize="14" HorizontalTextAlignment="Center" />
-                    <Label Text="Wed\n20" FontSize="14" HorizontalTextAlignment="Center" />
-                    <Border BackgroundColor="#B7E1E6" StrokeThickness="0" StrokeShape="RoundRectangle 10">
-                        <Label Text="Thu\n21" FontSize="14" HorizontalTextAlignment="Center" Padding="8" />
-                    </Border>
-                    <Label Text="Fri\n22" FontSize="14" HorizontalTextAlignment="Center" />
-                </HorizontalStackLayout>
+                <Border BackgroundColor="#095D7E" 
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10"
+                    Margin="0,0,0,10">
+                    <Label x:Name="TodayDateLabel"
+                       TextColor="FloralWhite"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" 
+                       />
+                </Border>
 
                 <!-- Appointments -->
                 <Label Text="Appointments Today"

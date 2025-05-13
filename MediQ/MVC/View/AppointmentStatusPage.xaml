@@ -32,10 +32,10 @@
 		</Grid>
 
 		<ScrollView Padding="20">
-			<VerticalStackLayout Spacing="10">
+            <VerticalStackLayout Spacing="10" x:Name="appointment_status">
 
 				<!-- Approved Appointment -->
-				<Frame BackgroundColor="#2AA97D" CornerRadius="12" Padding="15">
+				<!--<Frame BackgroundColor="#2AA97D" CornerRadius="12" Padding="15">
 					<VerticalStackLayout>
 						<Label Text="Dr. Muniz" TextColor="White" FontSize="16" FontAttributes="Bold" />
 						<HorizontalStackLayout Spacing="10" VerticalOptions="Center">
@@ -47,7 +47,7 @@
 					</VerticalStackLayout>
 				</Frame>
 
-				<!-- Pending Appointment -->
+				--><!-- Pending Appointment --><!--
 				<Frame BackgroundColor="#F4A950" CornerRadius="12" Padding="15">
 					<VerticalStackLayout>
 						<Label Text="Dr. Uy" TextColor="White" FontSize="16" FontAttributes="Bold" />
@@ -60,7 +60,7 @@
 					</VerticalStackLayout>
 				</Frame>
 
-				<!-- Rejected Appointment -->
+				--><!-- Rejected Appointment --><!--
 				<Frame BackgroundColor="#E05C5C" CornerRadius="12" Padding="15">
 					<VerticalStackLayout>
 						<Label Text="Dr. Santos" TextColor="White" FontSize="16" FontAttributes="Bold" />
@@ -71,7 +71,7 @@
                                    HorizontalOptions="EndAndExpand" />
 						</HorizontalStackLayout>
 					</VerticalStackLayout>
-				</Frame>
+				</Frame>-->
 
 			</VerticalStackLayout>
 		</ScrollView>
