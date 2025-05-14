@@ -15,6 +15,77 @@ namespace MediQ.MVC.View
             initializeAppointmentStatus();
         }
 
+        private void filterAppointments(object sender, EventArgs e)
+        {
+            var picker = sender as Picker;
+            if(picker.SelectedIndex >= 0)
+            {
+                string filter = picker.Items[picker.SelectedIndex];
+                appointment_status.Clear();
+                getFilteredAppointments(filter);
+            }
+        }
+
+        private Picker createPicker()
+        {
+            Picker picker = new Picker
+            {
+                Title = "Select an option",
+                SelectedIndex = 0,
+                BackgroundColor = Color.FromArgb("#005F79"),
+                TextColor = Colors.White,
+                TitleColor = Color.FromArgb("#005F79"),
+            };
+
+            picker.Items.Add("All Items");
+            picker.Items.Add("Approved");
+            picker.Items.Add("Pending");
+            picker.Items.Add("Rejected");
+            picker.SelectedIndexChanged += filterAppointments;
+
+            return picker;
+        }
+
+        private void getFilteredAppointments(string filter)
+        {
+            List<Appointment> list_of_app = new();
+            if (filter != "All Items")
+            {
+                list_of_app = this.ac.loadAppointmentsStatus(MainPage.user.user_ID, filter);
+            }
+            else
+            {
+                list_of_app = this.ac.loadAppointmentsStatus(MainPage.user.user_ID);
+            }
+
+            if (list_of_app.Count == 0)
+            {
+                Border border = createBorder();
+                Label label = createLabel("No Appointments");
+                label.HorizontalTextAlignment = TextAlignment.Center;
+                border.Content = label;
+                appointment_status.Children.Add(border);
+                return;
+            }
+
+            foreach (Appointment app in list_of_app)
+            {
+                Border border = createBorderStatus(app.status);
+                VerticalStackLayout v_layout = createVLayout();
+                Label label_out = createOuterLabel($"Dr. {app.doctor.last_name}");
+                HorizontalStackLayout h_layout = createHLayout();
+                Label label_in = createInnerLabel($"{app.date.ToString("MMM d")} - {DateTime.Today.Add(app.time).ToString("h tt")} - {app.status}");
+
+                h_layout.Children.Add(label_in);
+
+                v_layout.Children.Add(label_out);
+                v_layout.Children.Add(h_layout);
+
+                border.Content = v_layout;
+                appointment_status.Children.Add(border);
+            }
+        }
+
         private void initializeAppointmentStatus()
         {
             List<Appointment> list_of_app = this.ac.loadAppointmentsStatus(MainPage.user.user_ID);

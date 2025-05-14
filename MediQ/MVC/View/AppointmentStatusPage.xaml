@@ -3,39 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MediQ.MVC.View.AppointmentStatusPage"
              BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
 
-	<VerticalStackLayout Spacing="0">
+            <Grid BackgroundColor="#005F79" Padding="20,20,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-		<Grid BackgroundColor="#005F79" Padding="20,20,20,20">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="Auto" />
-				<ColumnDefinition Width="*" />
-			</Grid.ColumnDefinitions>
-
-			<Image Source="arrow_left.png"
+                <Image Source="arrow_left.png"
                    WidthRequest="24"
                    HeightRequest="24"
                    VerticalOptions="Center"
                    HorizontalOptions="Start">
-				<Image.GestureRecognizers>
-					<TapGestureRecognizer Tapped="OnBackTapped" />
-				</Image.GestureRecognizers>
-			</Image>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnBackTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
 
-			<Label Grid.Column="1"
+                <Label Grid.Column="1"
                    Text="Appointment Status"
                    FontSize="20"
                    FontAttributes="Bold"
                    TextColor="White"
                    VerticalOptions="Center"
                    HorizontalOptions="Center" />
-		</Grid>
+            </Grid>
 
-		<ScrollView Padding="20">
-            <VerticalStackLayout Spacing="10" x:Name="appointment_status">
+            <ScrollView Padding="20">
+                <VerticalStackLayout Spacing="10">
+                    <Picker Title="Select an option"
+                            BackgroundColor="#005F79"
+                            TextColor="White"
+                            TitleColor="#005F79"
+                            SelectedIndex="0"
+                            SelectedIndexChanged="filterAppointments">
+                        <Picker.Items>
+                            <x:String>All Items</x:String>
+                            <x:String>Approved</x:String>
+                            <x:String>Pending</x:String>
+                            <x:String>Rejected</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <VerticalStackLayout x:Name="appointment_status" Spacing="10">
 
-				<!-- Approved Appointment -->
-				<!--<Frame BackgroundColor="#2AA97D" CornerRadius="12" Padding="15">
+                    </VerticalStackLayout>
+                    <!-- Approved Appointment -->
+                    <!--<Frame BackgroundColor="#2AA97D" CornerRadius="12" Padding="15">
 					<VerticalStackLayout>
 						<Label Text="Dr. Muniz" TextColor="White" FontSize="16" FontAttributes="Bold" />
 						<HorizontalStackLayout Spacing="10" VerticalOptions="Center">
@@ -47,7 +62,9 @@
 					</VerticalStackLayout>
 				</Frame>
 
-				--><!-- Pending Appointment --><!--
+				-->
+                    <!-- Pending Appointment -->
+                    <!--
 				<Frame BackgroundColor="#F4A950" CornerRadius="12" Padding="15">
 					<VerticalStackLayout>
 						<Label Text="Dr. Uy" TextColor="White" FontSize="16" FontAttributes="Bold" />
@@ -60,7 +77,9 @@
 					</VerticalStackLayout>
 				</Frame>
 
-				--><!-- Rejected Appointment --><!--
+				-->
+                    <!-- Rejected Appointment -->
+                    <!--
 				<Frame BackgroundColor="#E05C5C" CornerRadius="12" Padding="15">
 					<VerticalStackLayout>
 						<Label Text="Dr. Santos" TextColor="White" FontSize="16" FontAttributes="Bold" />
@@ -73,8 +92,9 @@
 					</VerticalStackLayout>
 				</Frame>-->
 
-			</VerticalStackLayout>
-		</ScrollView>
+                </VerticalStackLayout>
+            </ScrollView>
 
-	</VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

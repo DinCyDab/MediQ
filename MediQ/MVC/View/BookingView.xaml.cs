@@ -64,7 +64,7 @@ namespace MediQ.MVC.View
                 List<Schedule> list_of_schedule = this.sched_c.loadSchedule(doctor_ID, date);
                 Border border = createBorder();
                 VerticalStackLayout v_layout = createVLayout();
-                Label out_label = createOutLabel(sched.date.ToString("MMM d"));
+                Label out_label = createOutLabel(sched.date.ToString("MMM d - ddd"));
                 Grid grid = createGrid();
                 int j = 0;
                 int k = 0;

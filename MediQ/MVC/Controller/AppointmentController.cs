@@ -61,5 +61,18 @@ namespace MediQ.MVC.Controller
 
             return list_of_appointments;
         }
+
+        public List<Appointment> loadAppointmentsStatus(int user_ID, string filter)
+        {
+            List<Appointment> list_of_appointments = null;
+
+            string sql = $"SELECT * FROM Appointment " +
+                         $"INNER JOIN Doctors ON Appointment.doctor_ID = Doctors.doctor_ID " +
+                         $"WHERE user_ID = {user_ID} AND appointment_status = '{filter}' " +
+                         $"ORDER BY appointment_date, appointment_time";
+            list_of_appointments = this.dc.loadAppointments(sql);
+
+            return list_of_appointments;
+        }
     }
 }
